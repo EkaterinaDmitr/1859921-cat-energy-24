@@ -1,5 +1,20 @@
 .cat-program{
   background-color: #D9D9D9;
+  width: 280px;
+  background-color: @gray--light;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width){
+    width: 708px;
+    padding-top: 77px;
+    padding-bottom: 57px;
+  }
+  @media (min-width: @desktop-width){
+    width: 570px;
+    padding-bottom: 59px;
+    margin: 0;
+  }
 }
 
 .cat-program__image{
@@ -20,6 +35,22 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: @base-font-weight;
+  width: 227px;
+  margin-bottom: 42px;
+
+    @media (min-width: @tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+    color: @text-color-heading;
+    width: 340px;
+    margin-left: 53px;
+    margin-top: 24px;
+    margin-bottom: 52px;}
+
+    @media (min-width: @desktop-width){
+    width: 467px;
+    margin-bottom: 27px;
+}
 
 }
 
@@ -29,3 +60,5 @@
   color: @text-color-heading;
 
 }
+
+

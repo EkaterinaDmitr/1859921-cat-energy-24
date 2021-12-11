@@ -65,3 +65,41 @@
 
 }
 
+
+
+@media (min-width: @tablet-width) {
+  .sample-program {
+    background: linear-gradient(to bottom, @white 70%, @gray--light 70%);
+    padding: 0 30px;
+  }
+
+  .sample-program__heading {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+  }
+
+  .sample-program__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 30px;
+  }
+
+  .sample-program__lead {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sample-program {
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, @white 25%, @gray--light 25%);
+    padding: 0 60px;
+  }
+
+  .sample-program__text {
+    width: 440px;
+  }
+}

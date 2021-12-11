@@ -25,3 +25,37 @@
 .contacts__map{
 
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__location-wrapper {
+    padding: 60px 40px 56px;
+  }
+
+  .contacts__heading {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__location-wrapper {
+    position: absolute;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    padding: 56px 80px;
+  }
+
+}
