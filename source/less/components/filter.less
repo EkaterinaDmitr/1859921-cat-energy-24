@@ -3,15 +3,21 @@
 }
 
 .filter__user-data{
+  border: none;
 
 }
 
 .filter__user-data-list{
+  list-style-type: none;
 
 }
 
 .filter__user-data-item{
+  width: 630px;
+}
 
+.filter__user-data-item:not(:last-child){
+  margin-bottom: 20px;
 }
 
 .filter__user-data-label{
@@ -19,21 +25,28 @@
 }
 
 .filter__user-data-input{
+  min-width: 497px;
 
 }
 
 .filter__program-choose{
-
+  border: 1px solid #E7E7E7;
+  min-width: 630px;
+  margin: auto 23px 45px 20px;
 }
 
 .filter__program-choose-list{
+  list-style-type: none;
 
 }
 
 .filter__program-choose-item{
 
 }
+.filter__program-choose-item:not(:last-child){
+  margin-bottom: 13px;
 
+}
 .filter__program-choose-input{
 
 }
@@ -43,51 +56,72 @@
 }
 
 .filter__user-contacts{
+  border: none;
 
 }
 
 .filter__user-contacts-title{
   text-transform: none;
+  margin:auto auto 35px 20px ;
 }
 
 .filter__user-contacts-list{
+  list-style-type: none;
+
 
 }
 
 .filter__user-contacts-item{
 
 }
+.filter__user-contacts-item:not(:last-child){
+  margin-bottom: 14px;
 
+}
 .filter__user-contacts-label{
 
 }
 
 .filter__user-contacts-input{
+  padding: 13px 50px 15px 15px;
 
 }
 
 .filter__comment{
+  border: none;
 
 }
 
 .filter__comment-title{
   text-transform: none;
+  margin: auto auto 37px 20px;
 
 }
 
 .filter__comment-text{
+  text-align: center;
+  width: 280px;
+  border: 1px solid #E7E7E7;
+  text-transform: uppercase;
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: @base-font-weight;
 
 }
 
 .filter__other-products{
+  border: none;
 
 }
 
 .filter__other-products-title{
   text-transform: none;
+  margin: auto auto 34px 20px;
 }
 
 .filter__other-products-list{
+  list-style-type: none;
+
 
 }
 
@@ -111,9 +145,14 @@
   background-color: @btn-color;
   color: @contrasting-color;
   text-transform: uppercase;
+  width: 280px;
+  padding: 7px 44px;
+  border: none;
+  margin: auto 20px 21px;
 }
 
 .filter__text{
   text-transform: none;
+  margin: auto 81px;
 
 }
