@@ -16,12 +16,6 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-    .main-nav__list {
-      width: 478px;
-    }
-  }
-
 .main-nav__link{
   text-decoration: none;
   color:@text-color-heading;
@@ -35,17 +29,16 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: @base-font-weight;
-  }
+    }
   @media (min-width: @desktop-width){
     font-size: 18px;
     line-height: 24px;
     font-weight: @base-font-weight;
     color: @white;
-
     }
   }
 
-.main-nav__list{
+.main-nav__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -53,16 +46,14 @@
   padding: 0;
 
   @media (min-width: @tablet-width){
-
     display: flex;
     justify-content: space-between;
     width: 440px;
     padding: 0;
     margin: 0;
-}
+  }
 
   @media (min-width: @desktop-width){
-    .main-nav__list{
     display: flex;
     justify-content: space-between;
     width: 478px;
@@ -79,4 +70,4 @@
       display: none;
   }
 }
-}
+

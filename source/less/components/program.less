@@ -15,24 +15,20 @@
 .program__list{
   text-transform: none;
   list-style-type: none;
-}
 
-@media (min-width: @tablet-width) {
-
-
-  .program__list {
+  @media (min-width: @tablet-width){
+    display: grid;
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: 1fr 1fr;
     grid-gap: 37px 137px;
   }
-}
 
-@media (min-width: @desktop-width) {
-
-  .program__list {
+  @media (min-width: @desktop-width){
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 
 .program__item{
   display: flex;
