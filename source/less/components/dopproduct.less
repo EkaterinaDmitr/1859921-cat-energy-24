@@ -1,4 +1,5 @@
 .dopproduct__list{
+  padding: 0;
   list-style-type: none;
 }
 .dopproduct__button{
@@ -8,6 +9,11 @@
   text-transform: uppercase;
   color: @contrasting-color;
   padding: 10px 109px;
+
+  @media (min-width: @tablet-width){
+    padding: 7px 220px;
+  }
+
 }
 .dopproduct__heading{
   font-family: @main-font;
@@ -36,3 +42,29 @@
   line-height: 14px;
   color: @text-color;
  }
+
+.dopproduct__desc {
+  display: flex;
+  justify-content: space-between;
+  font-family: @base-font-family;
+  font-style: normal;
+  font-weight: @base-font-weight;
+  font-size: 12px;
+  line-height: 16px;
+  color: @text-color;
+  margin-bottom: 15px;
+}
+
+.dopproduct__item:not(:last-child){
+  margin-bottom: 20px;
+}
+.dopproduct__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+
+  }
+  @media (min-width: @desktop-width){
+
+  }
+}
