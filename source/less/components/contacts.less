@@ -21,25 +21,28 @@
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
+  align-items: center;
 
   @media (min-width: @desktop-width){
     position: absolute;
-    top: 50%;
+    top: 30%;
     background-color: @bg-color;
     width: 565px;
+    justify-content: space-around;
   }
 }
 
 .contacts__heading{
   font-family: @main-font;
   font-size: 16px;
+  font-weight: @base-font-weight;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 
   @media (min-width: @tablet-width){
 
-    width: 172px;
+    width: 168px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -57,7 +60,9 @@
     width: 160px;
     text-align: right;
   }
-
+  @media (min-width: @desktop-width){
+    text-align: left;
+  }
 }
 
 .contacts__map-image{
@@ -66,7 +71,6 @@
   width: 100%;
 
   @media (min-width: @desktop-width){
-    min-width: 1440px;
     height: 400px;
     }
 }
