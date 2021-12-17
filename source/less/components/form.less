@@ -1,0 +1,36 @@
+.form__label{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @text-color;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__label-checkbox {
+  display: block;
+}
+
+.form__label-checkbox .filter__program-choose-input {
+  flex: none;
+  width: auto;
+  min-height: auto;
+}
+
+.form__legend{
+  padding-right: 25px;
+  background-color: @white;
+  max-width: 220px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    margin-bottom: 60px;
+    margin-left: -20px;
+    max-width: none;
+  }
+}
