@@ -3,11 +3,19 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
+  margin: 10px 0;
 
   @media (min-width: @tablet-width){
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 100%;
+    justify-content: space-between;
   }
 }
 

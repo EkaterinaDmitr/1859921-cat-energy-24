@@ -1,8 +1,7 @@
-.main-nav{
 
-}
 
-.main-nav__wrapper{
+.main-nav__wrapper {
+  // display: none;
   margin: 0 auto;
   text-transform: uppercase;
   list-style-type: none;
@@ -11,7 +10,8 @@
     // width: 440px;
   }
   @media (min-width: @desktop-width){
-    width: 478px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -105,8 +105,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 25%;
+  left: 25%;
   width: 24px;
   height: 1.5px;
   background-color: @text-color-heading;

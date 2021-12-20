@@ -15,7 +15,9 @@
 }
 
 .sample-program__features {
-
+  @media (min-width: @desktop-width){
+    width: max-content;
+  }
 }
 
 .sample-program__heading {
@@ -66,6 +68,7 @@
   @media (min-width: @desktop-width){
     display: flex;
     flex-direction: column;
+    width: max-content;
 
   }
 }
@@ -101,7 +104,12 @@
 .sample-program__compare {
   text-align: center;
 
+  @media (min-width: @tablet-width){
+
+  }
+
   @media (min-width: @desktop-width){
+    width: max-content;
     grid-column: 3/2;
     grid-row: 1/-3;
   }
