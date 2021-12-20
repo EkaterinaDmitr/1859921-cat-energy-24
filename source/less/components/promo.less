@@ -4,11 +4,8 @@
   align-items: center;
   font-family: @main-font;
   font-style: normal;
-  // background: linear-gradient(rgba(@btn-color, 0.85) 302px, transparent 302px), url("/source/img/index-background-desktop-2.jpg"), linear-gradient(#4f4e54 302px, transparent 302px);
-  // // background-image: url("/source/img/index-background-desktop-2.jpg");
-  // background-color: @btn-color;
-  // color: @contrasting-color;
-  // text-align: center;
+  color: @contrasting-color;
+  text-align: center;
 
   @media (min-width: @tablet-width){
     margin: 0 auto;
@@ -31,11 +28,11 @@
 
   &::after {
     position: absolute;
+    background-image: url("/source/img/location.png");
     top: 0;
     left: 0;
     width: 320px;
     height: 302px;
-    background-image: url("/source/img/index-background-desktop-2.jpg");
     z-index: -2;
     content: "";
   }
