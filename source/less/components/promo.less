@@ -4,33 +4,104 @@
   align-items: center;
   font-family: @main-font;
   font-style: normal;
-  background-color: @btn-color;
   color: @contrasting-color;
   text-align: center;
+
+  @media (min-width: @tablet-width){
+    margin: 0 auto;
+    position: relative;
+    background-color: transparent;
+
+  }
+  @media (min-width: @desktop-width){
+    padding: 0;
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: row;
+    color: @text-color-heading;
+  }
 }
 
-.promo__content{
+.promo__content {
+  padding: 0 20px 20px;
+  position: relative;
 
+  &::after {
+    position: absolute;
+    background-image: url("/source/img/location.png");
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 302px;
+    z-index: -2;
+    content: "";
+  }
+  @media (min-width: @tablet-width) {
+    min-height: 500px;
+    padding: 0 119px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 635px;
+    padding: 0 190px;
+  }
 }
+
 
 .promo__heading{
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width){
+    width: 414px;
+  }
 }
 
 .promo__slogan{
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width){
+    width: 283px;
+  }
 }
 
-.promo__bg{
+// .promo__bg{
+//   @media (min-width: @tablet-width){
+//     display: none;
+//   }
 
-}
+//   @media (min-width: @desktop-width){
+//     background-image: url("/source/img/index-background-desktop-1.jpg");
+//     width: 1043px;
+//     height: 696px;
+//     display: flex;
+//     right: -50px;
+//     position: absolute;
+//     justify-content: flex-end;
+//     z-index: -2;
+//     top: -100px;
+//   }
+// }
 
-.promo__picture{
+.promo__picture {
+  @media (min-width: @tablet-width){
+    z-index: -1;
+    top: 180px;
+    right: 150px;
+    position: absolute;
+  }
 
+  @media (min-width: @desktop-width) {
+    top: 0;
+    left: 700px;
+  }
 }
 
 .promo__choose-program{
@@ -40,4 +111,8 @@
   width: 280px;
   height: 40px;
   border: none;
+
+  @media (min-width: @tablet-width){
+    width: 244px;
+  }
 }
