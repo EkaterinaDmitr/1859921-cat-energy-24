@@ -11,6 +11,7 @@
   background-position-y: top, top;
   position: relative;
 
+
   @media (min-width: @tablet-width){
     margin: 0 auto;
     position: relative;
@@ -38,6 +39,17 @@
   width: 100%;
   background-color: @btn-color;
   background-position: top center;
+
+  &::after {
+    position: absolute;
+    background-image: url("/source/img/location.png");
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 302px;
+    z-index: -2;
+    content: "";
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
