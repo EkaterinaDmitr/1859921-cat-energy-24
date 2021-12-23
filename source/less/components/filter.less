@@ -107,6 +107,8 @@
 
 .filter__user-contacts{
   border: none;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -116,6 +118,7 @@
 }
 
 .filter__user-contacts-list{
+  padding: 0;
   list-style-type: none;
 
   @media (min-width: @desktop-width){
@@ -180,7 +183,7 @@
 
 .filter__comment-text{
   text-align: center;
-  width: 90%;
+  width: 100%;
   border: 1px solid #E7E7E7;
   text-transform: uppercase;
   font-family: @main-font;
@@ -242,16 +245,18 @@
   background-color: @btn-color;
   color: @contrasting-color;
   text-transform: uppercase;
-  width: 280px;
   padding: 7px 44px;
   border: none;
   margin: auto 20px 21px;
+
+  @media (min-width: @desktop-width){
+    padding: 13px 188px;
+  }
 }
 
-.filter__text{
+.filter__text {
   text-transform: none;
-  margin: auto 81px;
-
+  margin: auto 50px;
 }
 
 .filter__fieldset-radio{

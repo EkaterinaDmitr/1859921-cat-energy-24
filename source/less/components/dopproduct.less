@@ -13,6 +13,11 @@
   @media (min-width: @tablet-width){
     padding: 7px 220px;
   }
+  @media (min-width: @desktop-width) {
+    padding: 10px 53px;
+    height: fit-content;
+    width: auto;
+  }
 
 }
 .dopproduct__heading {
@@ -41,4 +46,23 @@
   font-size: 14px;
   line-height: 14px;
   color: @text-color;
+}
+
+.dopproduct__desc{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dopproduct__item {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.dopproduct__container {
+  @media (min-width: @desktop-width){
+    display: flex;
+  }
 }

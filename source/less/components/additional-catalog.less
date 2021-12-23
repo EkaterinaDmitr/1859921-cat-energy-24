@@ -18,5 +18,67 @@
 .additional-catalog__container{
   @media (min-width: @desktop-width){
     display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional-catalog__present {
+  // margin: 0;
+  // padding: 35px 20px;
+  // box-sizing: border-box;
+}
+
+.additional-catalog__wrapper {
+  background-image: url("../../img/image-cat-traveler.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 280px;
+  height: 290px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: @tablet-width){
+    background-image: url("../../img/image-cat-traveler-2.jpg");
+    width: auto;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icon-present.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 58px;
+    width: 78px;
+    height: 80px;
+
+    @media (min-width: @tablet-width){
+      position: relative;
+      top: -100px;
+      left: -200px;
+
+    }
+  }
+
+
+}
+
+.additional-catalog__text {
+  font-family: @base-font-family;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+  margin: 0 0 43px;
+  text-align: center;
+  width: 160px;
+  justify-self: flex-end;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 350px;
   }
 }

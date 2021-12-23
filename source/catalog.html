@@ -7,35 +7,34 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/Favicon/favicon.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mini.svg" width="33" height="37" alt="Логотип Cat energy">
-        <img class="page-header__logo-big-image" src="img/logo-2.svg" width="101" height="18" alt="Название Cat energy»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <header class="page-header container">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mini.svg" width="33" height="37" alt="Логотип Cat energy">
+      <img class="page-header__logo-big-image" src="img/logo-2.svg" width="101" height="18" alt="Название Cat energy»">
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active main-nav__link--contrast" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active main-nav__link--contrast" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--contrast" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <main>
       <section class="catalog container">
         <h1 class="catalog__title">Каталог продукции</h1>
-        <div class="catalog__product product">
+        <div class="catalog__product product container">
           <ul class="product__list">
             <li class="product__item">
               <a class="product__link">
@@ -156,7 +155,7 @@
               </div>
               <a class="product__button" href="#">заказать</a>
             </li>
-            <li class="product__item">
+            <li class="product__item-all">
               <h3 class="product__heading">Показать еще 100500 товаров</h3>
               <p class="product__text">На самом деле вкусов гораздо больше!</p>
               <a class="product__button-all" href="#">показать все</a>
@@ -166,7 +165,7 @@
       </section>
       <section class="additional-catalog container">
         <h2 class="additional-catalog__title">Дополнительные товары</h2>
-        <div class="additional-catalog__container">
+        <div class="additional-catalog__container container">
           <div class="additional-catalog__product dopproduct">
 
             <ul class="dopproduct__list">
@@ -212,33 +211,34 @@
               </li>
             </ul>
           </div>
-          <div class="additional-catalog__present present">
-            <img class="present__img" src="img/image-cat-traveler.jpg" alt="">
-            <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="additional-catalog__present ">
+            <div class="additional-catalog__wrapper">
+              <h2 class="visually-hidden">Специальное предложение</h2>
+              <p class="additional-catalog__text">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="contacts container">
-        <div class="contacts__location-wrapper">
+      <section class="contacts">
+        <div class="contacts__location-wrapper container">
           <div class="contacts__address">
             <h2 class="contacts__heading">приглашаем к сотрудничеству дилеров!</h2>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="contacts__map">
-            <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6087925756676!2d30.32070946609699!3d59.93863343187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sINC0LiAxOS84!5e0!3m2!1sru!2sru!4v1639506884756!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-            <!-- <img src="img/location.png" width="320" height="362" alt="адрес на карте"> -->
-          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6087925756676!2d30.32070946609699!3d59.93863343187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sINC0LiAxOS84!5e0!3m2!1sru!2sru!4v1639506884756!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__link" href="index.html">
           <img src="img/footer-logo-2.svg" width="128" height="24" alt="название сайта">
         </a>
         <div class="page-footer__social-container">
+          <h2 class="visually-hidden">Социальные сети</h2>
           <a class="page-footer__link" href="#">
             <svg width="28" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="vk-image" d="M.09 5.49c0-.86.51-1.32 1.54-1.38l3.97.02c.27 0 .44.13.53.38.41 1.26.87 2.34 1.38 3.26.5.9 1.16 1.96 1.98 3.15.07.15.19.23.35.23.12 0 .22-.06.29-.18l.08-.27.03-4.36c0-.3-.08-.5-.23-.6-.15-.1-.43-.17-.84-.22-.32-.06-.48-.24-.48-.56 0-.07.01-.12.03-.15.37-1.09 1.44-1.63 3.2-1.63l1.49-.03c.67 0 1.23.16 1.68.48.44.32.66.82.66 1.5v5.72c.13.08.24.12.35.12.26 0 .5-.15.7-.45 1.94-2.58 3-4.3 3.16-5.18l.05-.13c.13-.25.33-.47.62-.65.28-.19.53-.31.74-.38a.55.55 0 01.24-.05h4.13l.27.03c.35 0 .63.16.83.47.07.1.11.21.14.33a2.42 2.42 0 01.07.56v.17a6.1 6.1 0 01-.95 2.2 23.4 23.4 0 01-1.93 2.53c-.78.9-1.27 1.5-1.46 1.78a.93.93 0 00-.24.56c0 .13.07.28.2.45l3.9 4.63c.21.27.32.56.32.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.15.43l-.45.03h-4.15a.86.86 0 01-.11.02c-.4 0-.76-.16-1.1-.48l-2.5-2.96a1.38 1.38 0 00-.37-.33 38.47 38.47 0 00-.54 2.24l-.08.42a1.4 1.4 0 01-1.11 1.06l-.38.03h-2.6c-1.48 0-2.95-.64-4.42-1.92a19.3 19.3 0 01-3.95-4.94A47.52 47.52 0 01.22 6.22a1.92 1.92 0 01-.13-.73zm16 6.51c-.37 0-.7-.1-1-.29a.9.9 0 01-.46-.79V5.14c0-.34-.09-.58-.26-.72-.18-.14-.5-.21-.94-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.18.93 1.18 1.71v4.43a1.5 1.5 0 01-.54 1.04c-.32.28-.67.42-1.06.42-.54 0-.94-.24-1.23-.73a26.16 26.16 0 01-3.09-5.63L5.2 5.2H1.66c-.23 0-.36.01-.39.04-.03.02-.04.1-.04.21 0 .15.02.31.05.48l.56 1.4c1.5 3.64 3.12 6.51 4.87 8.6 1.75 2.1 3.46 3.15 5.15 3.15h2.67c.1 0 .18-.03.24-.09.05-.06.1-.17.13-.34l.05-.25.5-2.21c.15-.3.27-.5.38-.6.2-.19.43-.28.7-.28.42 0 .86.24 1.3.73l2.26 2.71c.15.22.3.33.46.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 00-.09-.25L21.8 13.9c-.3-.35-.45-.73-.45-1.13 0-.4.14-.79.42-1.16.23-.33.68-.9 1.35-1.67a36.7 36.7 0 001.74-2.19c.5-.68.83-1.3.99-1.85l.08-.32a.37.37 0 01-.03-.17c0-.07 0-.14-.02-.19h-4.19c-.26.1-.48.25-.64.46l-.16.47c-.44 1.16-1.6 2.95-3.49 5.36-.37.34-.8.5-1.3.5z" fill="#666"/></svg>
@@ -253,7 +253,7 @@
           </a>
         </div>
         <div class="page-footer__academy-wrapper">
-          <a class="page-footer__link" href="#">HTML Academy
+          <a class="page-footer__link-academy" href="#">HTML Academy
             <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="academy-logo" d="M13.64.02L13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" fill="#666"/></svg>
           </a>
