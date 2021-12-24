@@ -1,4 +1,8 @@
 .additional-catalog{
+  @media (min-width: @desktop-width){
+    // margin: 0 110px;
+    padding: 0;
+  }
 
 }
 
@@ -9,6 +13,10 @@
   font-size: 24px;
   line-height: 24px;
   color: @text-color-heading;
+
+  @media (min-width: @desktop-width){
+    margin: 0 110px;
+  }
 }
 
 .additional-catalog__product{
@@ -19,6 +27,8 @@
   @media (min-width: @desktop-width){
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin: 0 110px;
   }
 }
 
@@ -33,7 +43,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

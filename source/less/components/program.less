@@ -1,5 +1,11 @@
 .program{
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width){
+    margin: 0 110px;
+    padding: 0;
+    max-width: 1220px;
+  }
 }
 
 .program__description{
@@ -49,18 +55,15 @@
   line-height: 36px;
   font-weight: @base-font-weight;
   color: @text-color-heading;
-  margin: 27px auto 37px 20px;
   text-transform: none;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 65px auto 54px 69px;
   }
   @media (min-width: @desktop-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 77px auto 56px 110px;
   }
 
 }
@@ -72,7 +75,6 @@
   font-weight: @base-font-weight;
   text-transform: uppercase;
   width: 226px;
-  margin: auto auto 39px 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
