@@ -21,6 +21,7 @@
 .program__list{
   text-transform: none;
   list-style-type: none;
+  padding: 0;
 
   @media (min-width: @tablet-width){
     display: grid;
@@ -40,11 +41,24 @@
 .program__item{
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width){
     flex-direction: column;
   }
 
+}
+
+.program__item::after{
+  @media (min-width: @tablet-width){
+    content: "1";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    font-size: 250px;
+    color: #F2F2F2;
+    z-index: -1;
+  }
 }
 
 //form//
