@@ -67,7 +67,11 @@
   text-transform: uppercase;
   color: @gray--darken;
   text-align: center;
+  width: 174px;
 
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .product__text{
@@ -80,13 +84,15 @@
 
 }
 
-.product__desc{
+.product__desc {
   font-family: @base-font-family;
   font-style: normal;
   font-weight: @base-font-weight;
   font-size: 12px;
   line-height: 16px;
   color: @text-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
 }
 
@@ -98,6 +104,7 @@
   text-transform: uppercase;
   text-align: center;
   color: @contrasting-color;
+  // width: 100%; тогда кнопка растягивается на всю карточку, так некорректно/
   padding: 10px 109px;
   grid-column: 1/3;
 
