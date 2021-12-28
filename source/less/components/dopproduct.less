@@ -9,6 +9,7 @@
   text-transform: uppercase;
   color: @contrasting-color;
   padding: 10px 109px;
+  text-align: center;
 
   @media (min-width: @tablet-width){
     padding: 7px 220px;
@@ -28,6 +29,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @gray--darken;
+
+  @media (min-width: @desktop-width){
+    margin-right: 130px;
+  }
 }
 
 .dopproduct__desc-description {
@@ -55,8 +60,9 @@
 
 .dopproduct__item {
   @media (min-width: @desktop-width) {
-    display: flex;
     justify-content: space-between;
+    grid-template-columns: 1fr 244px;
+    display: grid;
   }
 
 }
@@ -64,5 +70,7 @@
 .dopproduct__container {
   @media (min-width: @desktop-width){
     display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
   }
 }
