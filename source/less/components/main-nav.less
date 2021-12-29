@@ -13,13 +13,11 @@
 
 .main-nav__wrapper {
   display: none;
-  margin: 0 auto;
   text-transform: uppercase;
   list-style-type: none;
 
   @media (min-width: @tablet-width){
     display: block;
-    // width: 440px;
   }
   @media (min-width: @desktop-width){
     display: flex;
@@ -51,8 +49,10 @@
     }
 }
 .main-nav__link--active {
-  text-decoration: underline 2px solid @btn-color;
-  text-underline-offset: 8px;
+  @media (min-width: @tablet-width){
+    text-decoration: underline 2px solid @btn-color;
+    text-underline-offset: 8px;
+  }
 
 }
 
@@ -60,8 +60,16 @@
   color: @text-color-heading;
 }
 
-.main-nav__link:hover{
-
+.main-nav__link {
+  @media (max-width: @mobile-width-only){
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      border: 1px solid #E6E6E6;
+    }
+  }
 }
 
 .main-nav__link:active {
@@ -70,8 +78,17 @@
   text-decoration-thickness: 2px;
 }
 
+.main-nav__item {
+  @media (max-width: @mobile-width-only){
+    padding: 22px 0 24px;
+
+  }
+}
+
+
+
 .main-nav__item:not(:last-child) {
-  margin-bottom: 46px;
+  // margin-bottom: 46px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -124,22 +141,16 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
+.main-nav--opened .main-nav__wrapper {
+  display: block;
+  z-index: 5;
+  min-height: 260px;
+  background: @white;
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 24px;
-  height: 1.5px;
-  background-color: @text-color-heading;
-  box-shadow: 0 8px 0 0 @text-color-heading, 0 16px 0 0 @text-color-heading;
-}
+  top: 40px;
+  right: 50%;
+  min-width: 320px;
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(@text-color-heading, 30%);
-  box-shadow:
-    0 8px 0 0 fade(@text-color-heading, 30%),
-    0 16px 0 0 fade(@text-color-heading, 30%);
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -147,8 +158,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
+    top: 25%;
+    left: 25%;
     width: 25px;
     height: 2px;
     background-color: @text-color-heading;
@@ -167,4 +178,23 @@
   &:active::after {
     background-color: fade(@text-color-heading, 30%);
   }
+}
+
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 24px;
+  height: 1.5px;
+  background-color: @text-color-heading;
+  box-shadow: 0 8px 0 0 @text-color-heading, 0 16px 0 0 @text-color-heading;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@text-color-heading, 30%);
+  box-shadow:
+    0 8px 0 0 fade(@text-color-heading, 30%),
+    0 16px 0 0 fade(@text-color-heading, 30%);
 }
