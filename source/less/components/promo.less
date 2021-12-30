@@ -1,4 +1,4 @@
-.promo{
+.promo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,58 +6,111 @@
   font-style: normal;
   color: @contrasting-color;
   text-align: center;
-
-  @media (min-width: @tablet-width){
-    margin: 0 auto;
-    position: relative;
-    background-color: transparent;
-
-  }
-  @media (min-width: @desktop-width){
-    padding: 0;
-    margin-bottom: 82px;
-    display: flex;
-    flex-direction: row;
-    color: @text-color-heading;
-  }
-}
-
-.promo__content {
-  padding: 0 20px 20px;
+  margin: 0;
+  background-position-x: center, center;
+  background-position-y: top, top;
   position: relative;
 
-  &::after {
+  &::before {
+    content: "";
     position: absolute;
-    background-image: url("/source/img/location.png");
+    z-index: -1;
     top: 0;
-    left: 0;
     width: 320px;
     height: 302px;
-    z-index: -2;
-    content: "";
-  }
-  @media (min-width: @tablet-width) {
-    min-height: 500px;
-    padding: 0 119px;
+    background-color: #68B738;
+    background-image: url("../../img/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    &::after {
+    @media (min-width: @tablet-width){
       display: none;
+    }
+
+    @media (min-width: @desktop-width){
+      display: block;
+      width: 720px;
+      height: 694px;
+      text-align: inherit;
+      background-image: url(../../img/promo-desktop.jpg);
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: bottom;
+      z-index: -4;
+      margin-top: -105px;
+      right: 0;
     }
   }
 
-  @media (min-width: @desktop-width) {
-    min-height: 635px;
-    padding: 0 190px;
+  @media (min-width: @tablet-width){
+    min-height: 750px;
   }
+
+
 }
 
+.promo__content {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 322px;
+    background-color: #64a73c;
+
+    @media (min-width: @tablet-width){
+      display: none;
+    }
+
+  // position: relative;
+  // background-image: url(../../img/promo-bg.jpg);
+  // background-repeat: no-repeat;
+  // width: 100%;
+  // background-position: top center;
+  // margin-bottom: 20px;
+
+  // &::after {
+  //   position: absolute;
+  //   background-image: url("/source/img/location.png");
+  //   top: 0;
+  //   left: 0;
+  //   width: 320px;
+  //   height: 302px;
+  //   z-index: -2;
+  //   content: "";
+  // }
+
+  // @media (min-width: @tablet-width) {
+  //   background: none;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   min-height: 770px;
+  //   padding: 0 119px;
+
+  //   &::after {
+  //     display: none;
+  //   }
+  // }
+
+  // @media (min-width: @desktop-width) {
+  //   margin-top: 130px;
+  //   min-height: 570px;
+  // }
+  }
+}
 
 .promo__heading{
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  font-family: @main-font;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
+    color: @text-color-heading;
+    text-align: start;
     width: 414px;
   }
 }
@@ -68,30 +121,15 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width){
+    color: @text-color-heading;
     width: 283px;
   }
 }
 
-// .promo__bg{
-//   @media (min-width: @tablet-width){
-//     display: none;
-//   }
-
-//   @media (min-width: @desktop-width){
-//     background-image: url("/source/img/index-background-desktop-1.jpg");
-//     width: 1043px;
-//     height: 696px;
-//     display: flex;
-//     right: -50px;
-//     position: absolute;
-//     justify-content: flex-end;
-//     z-index: -2;
-//     top: -100px;
-//   }
-// }
-
 .promo__picture {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
+    // display: none;
+    background-image: url("");
     z-index: -1;
     top: 180px;
     right: 150px;
@@ -104,6 +142,17 @@
   }
 }
 
+.promo__picture-big{
+  display: none;
+  @media (min-width: @desktop-width){
+    display: block;
+    position: absolute;
+    right: -10%;
+    top: -25%;
+    z-index: -5;
+  }
+
+}
 .promo__choose-program{
   text-transform: uppercase;
   color: @contrasting-color;

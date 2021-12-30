@@ -14,29 +14,41 @@
   }
   @media (min-width: @desktop-width){
     grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
   }
 }
-
-.product__item {
-  display: grid;
-  grid-template-columns: 142px 142px;
-  align-items: center;
-  justify-items: center;
-
-  @media (min-width: @tablet-width){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  @media (min-width: @desktop-width){
-
-  }
-}
-
 .product__item:not(:last-child){
   margin-bottom: 20px;
 
 }
+
+.product__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: stretch;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: @gray--light;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.product__item-all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
 
 .product__link{
 
@@ -54,7 +66,12 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @gray--darken;
+  text-align: center;
+  width: 174px;
 
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .product__text{
@@ -67,34 +84,42 @@
 
 }
 
-.product__desc{
+.product__desc {
   font-family: @base-font-family;
   font-style: normal;
   font-weight: @base-font-weight;
   font-size: 12px;
   line-height: 16px;
   color: @text-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
 }
 
 .product__button{
   // width: 280px;
+  font-size: 16px;
   background-color: @btn-color;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: @contrasting-color;
+  // width: 100%; тогда кнопка растягивается на всю карточку, так некорректно/
   padding: 10px 109px;
   grid-column: 1/3;
+
+  @media (min-width: @desktop-width){
+    padding: 10px 53px;
+  }
 }
 
 .product__button-all{
   // width: 280px;
+  font-size: 16px;
   background-color: @gray;
   text-decoration: none;
   text-transform: uppercase;
   color: @text-color;
   text-align: center;
-  padding: 10px 109px;
-  grid-column: 1/3;
+  padding: 10px 94px;
 }
