@@ -10,8 +10,11 @@
   <body class="page__body">
     <header class="page-header container">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mini.svg" width="33" height="37" alt="Логотип Cat energy">
-        <img class="page-header__logo-big-image" src="img/logo-2.svg" width="101" height="18" alt="Название Cat energy»">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-header-mobile.svg" alt="Логотип.">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -166,5 +169,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
