@@ -54,6 +54,10 @@
     text-underline-offset: 8px;
   }
 
+  @media (min-width: @desktop-width){
+    text-decoration: underline 2px solid #fff;
+  }
+
 }
 
 .main-nav__link--contrast {
@@ -68,6 +72,7 @@
       width: 100%;
       left: 0;
       border: 1px solid #E6E6E6;
+      margin-top: -25px;
     }
   }
 }
@@ -76,6 +81,7 @@
   text-decoration: underline solid #68B738;
   text-underline-offset: 8px;
   text-decoration-thickness: 2px;
+
 }
 
 .main-nav__item {
@@ -144,7 +150,7 @@
 .main-nav--opened .main-nav__wrapper {
   display: block;
   z-index: 5;
-  min-height: 260px;
+  min-height: 200px;
   background: @white;
   position: absolute;
   top: 40px;

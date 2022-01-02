@@ -9,6 +9,7 @@
     width: 708px;
     padding-top: 77px;
     padding-bottom: 57px;
+    padding-left: 52px;
   }
   @media (min-width: @desktop-width){
     width: 570px;
@@ -33,10 +34,14 @@
 
   @media (min-width: @tablet-width){
     margin: 0;
+    margin-top: 24px;
+    font-size: 36px;
+    line-height: 36px;
   }
   @media (min-width: @desktop-width){
     margin-left: 150px;
-    margin-top: 0;
+    margin-top: -15px;
+    margin-bottom: 73px;
   }
 }
 
@@ -55,7 +60,7 @@
     background-image: url("../../img/cat-slim-tablet.svg");
     width: 200px;
     height: 211px;
-    left: 65%;
+    left: 60%;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,7 +68,7 @@
     width: 100px;
     height: 106px;
     left: 150px;
-    // bottom: -150px;
+    bottom: -75px;
     background-image: url("../../img/cat-slim-desctop.svg");
     background-repeat: no-repeat;
     border: none;
@@ -87,7 +92,7 @@
     width: 268px;
     height: 200px;
     background-image: url("../../img/cat-pro-tablet.svg");
-    left: 60%;
+    left: 57%;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,7 +100,7 @@
     width: 134px;
     height: 100px;
     left: 780px;
-    // bottom: -150px;
+    bottom: -75px;
     background-image: url("../../img/cat-pro-desktop.svg");
     background-repeat: no-repeat;
     border: none;
@@ -111,6 +116,7 @@
   font-weight: @base-font-weight;
   width: 227px;
   margin-bottom: 42px;
+  color: @text-color;
 
     @media (min-width: @tablet-width){
     font-size: 16px;
@@ -132,15 +138,22 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @text-color-heading;
+  font-family: @main-font;
+  font-size: 16px;
 
+  @media (min-width: @tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-program__catalog-more::before{
   content: "";
-  width: 80%;
-  height: 2px;
+  width: 75%;
+  height: 1px;
   position: absolute;
   background-color: #d9d9d9;
+  margin-top: -19px;
 
   @media (min-width: @tablet-width){
     display: none;
