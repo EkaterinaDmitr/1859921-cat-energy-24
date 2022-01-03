@@ -1,19 +1,82 @@
 .images-toggle{
-
+  padding: 15px 0 40px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .images-toggle__before{
   background: none;
   border: none;
+  font-weight: @main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
-.images-toggle__compare{
-  background: none;
-  border: none;
+.images-toggle__compare {
+  width: 86px;
+  height: 14px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  cursor: pointer;
+
 
 }
 
-.images-toggle__after{
+.image-toogle__button {
+  display: none;
+}
+
+.image-toogle__button-for {
+  cursor: pointer;
+  position: relative;
+  right: -8px;
+  top: 3px;
+}
+
+.image-toogle__button-for::after {
+  content: "";
+  position: absolute;
+  background: @bg-color;
+  border-radius: 6px;
+  border: 1px solid #CDCDCD;
+  width: 86px;
+  height: 14px;
+  right: -35px;
+  top: 0px;
+}
+
+.image-toogle__button-for::before {
+  content: "";
+  position: absolute;
+  background: @btn-color;
+  border-radius: 6px;
+  border: none;
+  width: 36px;
+  height: 6px;
+  z-index: 1;
+  top: 4px;
+  right: 10px;
+}
+
+.image-toogle__button:checked + .image-toogle__button-for::before {
+  right: -30px;
+}
+
+.images-toggle__compare::after{
+  content: "";
+  background: #68B738;
+  border-radius: 6px;
+  width: 36px;
+  height: 6px;
+}
+
+.images-toggle__after {
   background: none;
   border: none;
+  font-weight: @main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }

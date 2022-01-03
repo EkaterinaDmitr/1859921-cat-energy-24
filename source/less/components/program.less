@@ -1,17 +1,16 @@
 .program {
   display: grid;
   padding-top: 20px;
-  padding-bottom: 48px;
 
   @media (min-width: @tablet-width) {
     padding-top: 46px;
-    padding-bottom: 12px;
+    padding-bottom: 90px;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 72px;
-    padding-bottom: 55px;
+    padding-bottom: 120px;
   }
 }
 
@@ -32,17 +31,24 @@
   font-weight: @base-font-weight;
   color: @text-color-heading;
   text-transform: none;
+  margin: 0 0 40px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
 
 }
 
 .program__list {
   display: grid;
   padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
-    row-gap: 94px;
+    row-gap: 135px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,7 +69,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    top: 0;
+    top: 10px;
     left: 0;
     background-color: @btn-color;
     background-position: center;
@@ -97,7 +103,8 @@
     position: inherit;
     top: 50%;
     left: 0;
-    padding-top: 20px;
+    padding-top: 31px;
+    line-height: 24px;
   }
 }
 
@@ -114,13 +121,15 @@
   }
   &::after {
       @media (min-width: @tablet-width){
+      font-family: @main-font;
       width: 120px;
       content: "1";
       position: absolute;
-      font-size: 250px;
+      font-size: 280px;
       color: rgb(242, 242, 242);
       z-index: -1;
-      top: 85px;
+      top: 100px;
+      right: 25px;
     }
   }
 }
@@ -137,13 +146,15 @@
   }
   &::after {
     @media (min-width: @tablet-width){
+      font-family: @main-font;
       width: 120px;
       content: "2";
       position: absolute;
-      font-size: 250px;
+      font-size: 280px;
       color: rgb(242, 242, 242);
       z-index: -1;
-      top: 85px;
+      top: 100px;
+      right: 25px;
     }
   }
 }
@@ -160,13 +171,15 @@
   }
   &::after {
     @media (min-width: @tablet-width){
+      font-family: @main-font;
       width: 120px;
       content: "3";
       position: absolute;
-      font-size: 250px;
+      font-size: 280px;
       color: rgb(242, 242, 242);
       z-index: -1;
-      top: 85px;
+      top: 100px;
+      right: 25px;
     }
   }
 }
@@ -184,13 +197,15 @@
 
   &::after {
     @media (min-width: @tablet-width) {
+      font-family: @main-font;
       width: 120px;
       content: "4";
       position: absolute;
-      font-size: 250px;
+      font-size: 280px;
       color: rgb(242, 242, 242);
       z-index: -1;
-      top: 85px;
+      top: 100px;
+      right: 25px;
     }
   }
 }

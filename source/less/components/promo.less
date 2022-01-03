@@ -43,13 +43,20 @@
   }
 
   @media (min-width: @tablet-width){
-    min-height: 750px;
+    min-height: 880px;
+  }
+  @media (min-width: @desktop-width){
+    min-height: 660px;
   }
 
 
 }
 
 .promo__content {
+  @media (min-width: @tablet-width) {
+    margin-left: 80px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -112,17 +119,26 @@
     color: @text-color-heading;
     text-align: start;
     width: 414px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .promo__slogan{
+  font-family: @main-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width){
     color: @text-color-heading;
-    width: 283px;
+    margin-right: 210px;
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @media (min-width: @desktop-width){
+    margin-left: -720px;
   }
 }
 
@@ -131,14 +147,14 @@
     // display: none;
     background-image: url("");
     z-index: -1;
-    top: 180px;
-    right: 150px;
+    top: 265px;
+    right: 30px;
     position: absolute;
   }
 
   @media (min-width: @desktop-width) {
     top: 0;
-    left: 700px;
+    left: 558px;
   }
 }
 
@@ -158,10 +174,18 @@
   color: @contrasting-color;
   background-color: @btn-color;
   width: 280px;
-  height: 40px;
   border: none;
+  margin-bottom: 20px;
+  padding: 14px 26px;
+  font-size: 20px;
+  font-family: @main-font;
 
   @media (min-width: @tablet-width){
     width: 244px;
+    margin-left: -240px;
+  }
+
+  @media (min-width: @desktop-width){
+    margin-right: 735px;
   }
 }
