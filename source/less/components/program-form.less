@@ -10,11 +10,17 @@
     font-size: 60px;
     line-height: 60px;
   }
-  @media (min-width: @desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
-  }
+}
 
+.program-form__title::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: 1px solid #E6E6E6;
+    margin-top: -25px;
+  }
 }
 
 .program-form__text {
@@ -34,6 +40,5 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-
   }
 }

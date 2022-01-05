@@ -30,9 +30,23 @@
   text-transform: uppercase;
   color: @gray--darken;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (min-width: @desktop-width){
     margin-right: 130px;
   }
+}
+
+.dopproduct__heading::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border: 1px solid #E6E6E6;
+  margin-top: -10px;
 }
 
 .dopproduct__desc-description {
@@ -50,6 +64,7 @@
   font-weight: @base-font-weight;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   color: @text-color;
 }
 

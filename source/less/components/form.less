@@ -23,12 +23,22 @@
   min-height: auto;
 }
 
-.form__legend{
-  padding-right: 25px;
+.form__legend {
   background-color: @white;
   font-size: 24px;
   line-height: 26px;
   font-family: @main-font;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    background-color: @btn-color;
+    height: 2px;
+    width: 100%;
+    margin-top: 15px;
+    z-index: -2;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
@@ -38,3 +48,4 @@
     line-height: 36px;
   }
 }
+
