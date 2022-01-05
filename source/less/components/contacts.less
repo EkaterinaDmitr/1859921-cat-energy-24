@@ -6,7 +6,10 @@
 }
 
 
-.contacts__location-wrapper{
+.contacts__location-wrapper {
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 20px;
+  }
   @media (min-width: @tablet-width){
 
   }
@@ -24,11 +27,11 @@
 
   @media (min-width: @desktop-width){
     position: absolute;
-    top: 30%;
+    top: 85px;
     background-color: @bg-color;
     width: 565px;
     justify-content: space-around;
-    padding: 56px 80px;
+    padding: 60px 78px;
   }
 }
 
@@ -39,13 +42,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  margin: 0;
+  padding-right: 30px;
 
   @media (min-width: @tablet-width){
 
-    width: 168px;
+    width: 200px;
     font-size: 20px;
     line-height: 26px;
+    margin: 40px 40px;
+    margin-bottom: 64px;
+  }
+  @media (min-width: @desktop-width){
+    margin: 0;
+  }
+}
+
+.contacts__heading br {
+  @media (max-width: @mobile-width-only){
+    display: none;
   }
 }
 
@@ -60,6 +74,8 @@
     line-height: 20px;
     width: 160px;
     text-align: right;
+    margin-right: 40px;
+    margin-top: -9px;
   }
   @media (min-width: @desktop-width){
     text-align: left;
@@ -76,22 +92,32 @@
     }
 }
 
-// .contacts__map-image{
-//   width: 320px;
-//   height: 362px;
-//   padding: 0;
-//   margin: 0;
+.contacts__map {
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+  }
+}
 
-//   @media (min-width: @tablet-width){
-//     padding: 0;
-//     margin: 0;
-//     width: 100%;
-//     height: 400px;
-//   }
+.contacts__map::before {
+  content: "";
+  width: 57px;
+  height: 53px;
+  background-image: url(../../img/map-pin-mobile.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 40%;
+  margin-top: 131px;
 
-//   // @media (min-width: @desktop-width){
-//   //   width: 100%;
-//   //   height: 400px;
-//   // }
-
-// }
+  @media (min-width: @tablet-width){
+    background-image: url(../../img/map-pin-desktop.png);
+    width: 113px;
+    height: 106px;
+    margin-top: 143px;
+    right: 42%;
+    position: absolute;
+  }
+  @media (min-width: @desktop-width){
+    right: 29%;
+    top: -6%;
+  }
+}

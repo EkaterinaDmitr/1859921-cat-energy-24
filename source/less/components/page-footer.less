@@ -15,18 +15,31 @@
     padding-top: 58px;
     padding-bottom: 55px;
   }
+  @media (min-width: @desktop-width){
+    padding-top: 46px;
+  }
 }
 
 .page-footer__link-logo {
   @media (max-width: @mobile-width-only) {
-    padding: 39px 0 30px;
+    padding: 27px 0 46px;
   }
+  @media (min-width: @tablet-width){
+    margin-right: 30px;
+  }
+}
+
+.page-footer__link-logo:hover {
+  opacity: 0.8;
+}
+
+.page-footer__link-logo:active {
+  opacity: 0.6;
 }
 
 .page-footer__link{
   text-decoration: none;
   color: @text-color;
-  padding: 39px 0 30px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -35,17 +48,44 @@
 }
 
 .page-footer__link:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 
+  @media (min-width: @tablet-width){
+    margin-right: 20px;
+  }
 }
 
-.page-footer__link-academy{
+.page-footer__link-academy {
   text-decoration: none;
   color: @text-color;
-
+  display: flex;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: @desktop-width){
+    display: flex;
+  }
+}
+
+.page-footer__link-academy:active {
+  color: #44444460;
+}
+
+.page-footer__text {
+  margin: 10px 139px 0 0;
+  font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin: -10px 24px 0px 0px;
+  }
+}
+
+.page-footer__social-container {
+  display: flex;
+  @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
   }
@@ -70,7 +110,7 @@
   height: 1px;
   position: absolute;
   background-color: #d9d9d9;
-  margin-top: 40px;
+  margin-top: 44px;
   right: 20px;
 
   @media (min-width: @tablet-width){
@@ -82,4 +122,30 @@
   @media (max-width: @mobile-width-only) {
     padding: 39px 0 30px;
   }
+}
+
+.page-footer__icon--mobile {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    &:hover {
+      stroke: #68B738;;
+    }
+    &:active {
+      opacity: 0.3;
+      }
+  }
+  display: none;
+}
+
+.page-footer__icon--tablet {
+  display: none;
+    @media (min-width: @tablet-width) {
+    display: block;
+      &:hover {
+      stroke: #68B738;
+      }
+      &:active {
+      opacity: 0.3;
+      }
+    }
 }
