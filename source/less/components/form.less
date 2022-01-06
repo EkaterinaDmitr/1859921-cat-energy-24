@@ -6,10 +6,16 @@
   display: flex;
   align-items: center;
   margin: 0;
+  font-family: @main-font;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 1px;
+
   }
 }
 
@@ -36,7 +42,7 @@
     background-color: @btn-color;
     height: 2px;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
     z-index: -2;
   }
 
@@ -46,6 +52,12 @@
     margin-left: -20px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
