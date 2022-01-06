@@ -2,6 +2,14 @@
   padding: 0;
   list-style-type: none;
 }
+
+.dopproduct__item {
+  margin-bottom: 45px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: -3px;
+  }
+}
+
 .dopproduct__button{
   width: 280px;
   background-color: @btn-color;
@@ -12,7 +20,9 @@
   text-align: center;
 
   @media (min-width: @tablet-width){
-    padding: 7px 220px;
+    padding: 9px 285px;
+    font-size: 16px;
+    font-family: @main-font;
   }
   @media (min-width: @desktop-width) {
     padding: 10px 53px;
@@ -33,20 +43,23 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 35px;
   }
 
-  @media (min-width: @desktop-width){
-    margin-right: 130px;
+  @media (min-width: @desktop-width) {
+    margin-right: 165px;
   }
 }
 
 .dopproduct__heading::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  border: 1px solid #E6E6E6;
-  margin-top: -10px;
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: 1px solid #E6E6E6;
+    margin-top: -10px;
+  }
 }
 
 .dopproduct__desc-description {
@@ -56,6 +69,15 @@
   font-size: 14px;
   line-height: 14px;
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    min-width: 133px;
+  }
 }
 
 .dopproduct__desc-meaning {
@@ -66,11 +88,20 @@
   line-height: 14px;
   text-transform: uppercase;
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .dopproduct__desc{
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
 }
 
 .dopproduct__item {
@@ -83,6 +114,10 @@
 }
 
 .dopproduct__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
   @media (min-width: @desktop-width){
     display: flex;
     justify-content: space-between;

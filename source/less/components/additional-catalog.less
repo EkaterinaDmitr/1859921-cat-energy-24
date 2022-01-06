@@ -1,4 +1,7 @@
 .additional-catalog{
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+  }
   @media (min-width: @desktop-width){
     margin-bottom: 30px;
   }
@@ -16,11 +19,28 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-top: -27px;
+    margin-left: 37px;
   }
-}
+  @media (min-width: @desktop-width) {
+    margin: 1px 0 0;
+  }
+ }
 
 .additional-catalog__product{
   margin-bottom: 69px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #CDCDCD;
+    padding: 40px 38px 12px;
+    margin-bottom: 0;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    padding: 73px 155px 0 0;
+  }
 }
 
 .additional-catalog__container{
@@ -78,7 +98,7 @@
     background-image: url("../../img/image-cat-traveler.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    width: 280px;
+    width: 245px;
     min-height: 290px;
     margin: 0 auto;
     display: flex;
@@ -86,6 +106,7 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
+    top: 80px;
 
     &::after {
       position: absolute;
