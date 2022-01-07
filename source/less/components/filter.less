@@ -2,7 +2,7 @@
   margin-bottom: 30px;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 16px;
     display: grid;
     grid-template-columns: repeat(2, 570px);
     column-gap: 80px;
@@ -25,6 +25,11 @@
   font-family: @main-font;
   font-weight: @base-font-weight;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 0;
+    margin-bottom: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0;
@@ -70,7 +75,8 @@
 
 
   @media (min-width: @tablet-width) {
-    padding: 15px 18px 10px;
+    margin-left: 17px;
+    padding: 21px 18px 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -240,12 +246,21 @@
   padding: 0;
   margin: 0 0 25px 0;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 0 70px 0;
+  }
+  @media (min-width: @desktop-width){
+    margin: 0 0 49px 0;
+
+  }
 }
 
 .filter__user-contacts-title {
   text-transform: none;
   margin-bottom: 35px;
-
+  @media (min-width: @tablet-width) {
+    margin-bottom: 78px;
+  }
 }
 
 .filter__user-contacts-list {
@@ -256,7 +271,6 @@
   @media (min-width: @desktop-width){
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 55px;
   }
 }
 
@@ -265,6 +279,10 @@
 }
 .filter__user-contacts-item:not(:last-child) {
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 27px;
+  }
 
 }
 .filter__user-contacts-label{
@@ -337,9 +355,18 @@
     border: 2px solid #444444;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    text-align: left;
+    padding-left: 18px;
+    width: 95%;
+    max-height: 176px;
+    margin-bottom: 61px;
+
+  }
+
+  @media (min-width: @desktop-width) {
     text-align: start;
   }
 }
@@ -436,8 +463,12 @@
   line-height: 20px;
   margin-bottom: 20px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding: 15px 65px;
+  }
   @media (min-width: @desktop-width){
-    padding: 13px 188px;
+    padding: 16px 209px;
   }
 }
 
@@ -460,8 +491,8 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 30px;
-    margin-bottom: 70px;
+    padding: 0 0 5px 21px;
+    margin-bottom: 75px;
     border: 1px solid #e7e7e7;
   }
 
