@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/Favicon/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
@@ -104,13 +104,13 @@
       </section>
 
       <section class="sample-program">
-        <div class="sample-program__features container">
+        <div class="sample-program__features">
           <h2 class="sample-program__heading">Живой пример</h2>
           <p class="sample-program__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и <br> по-прежнему спит по 16 часов в день. </p>
         </div>
-        <div class="sample-program__position container">
+        <div class="sample-program__position ">
           <dl class="sample-program__desc">
             <dt class="sample-program__meaning">5 кг</dt>
             <dt class="sample-program__meaning">60 дней</dt>
@@ -123,14 +123,11 @@
             <p class="sample-program__price"> 15 000 руб. </p>
           </div>
         </div>
-        <div class="sample-program__compare container">
+        <div class="sample-program__compare ">
           <picture>
-            <!-- <source media="(min-width: 1440px)" srcset="img/cat-fat-slider-desktop.png"> -->
             <source media="(min-width: 768px)" srcset="img/cat-slider-desktop.png">
             <img class="sample-program__image" src="img/cat-before-slider-mobile.png" alt="толстый кот">
           </picture>
-          <!-- <img class="sample-program__before" src="img/before-1.png" width="280" height="232" alt="Толстый кот">
-          <img class="sample-program__after" src="img/after-1.png" width="243" height="232" alt="Стройный кот"> -->
           <div class="images-toggle">
             <button class="images-toggle__before" type="button">было</button>
             <span class="visually-hidden">изменить было/стало</span>

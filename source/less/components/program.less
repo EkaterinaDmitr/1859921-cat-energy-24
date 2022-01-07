@@ -41,6 +41,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
     row-gap: 180px;
+    justify-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,7 +62,6 @@
     content: "";
     width: 60px;
     height: 60px;
-    top: 10px;
     left: 0;
     background-color: @btn-color;
     background-position: center;
@@ -83,6 +83,7 @@
   line-height: 18px;
   color: @text-color;
   margin: 12px 0 16px;
+  min-height: 50px;
 
   @media (min-width: @tablet-width) {
     position: inherit;
