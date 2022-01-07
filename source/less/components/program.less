@@ -14,17 +14,7 @@
   }
 }
 
-// .program{
-//   text-transform: uppercase;
-
-//   @media (min-width: @desktop-width){
-//     margin: 0 110px;
-//     padding: 0;
-//     max-width: 1220px;
-//   }
-// }
-
-.program__description{
+.program__description {
   font-family: @main-font;
   font-size: 36px;
   line-height: 40px;
@@ -35,17 +25,19 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 51px;
+    min-height: 60px;
   }
-
 }
 
 .program__list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 
   @media (min-width: @tablet-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
     row-gap: 180px;
@@ -57,7 +49,7 @@
   }
 }
 
-.program__item{
+.program__item {
   display: flex;
   align-items: center;
   margin-bottom: -2px;
@@ -75,30 +67,16 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-
     }
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     flex-direction: column;
   }
-
 }
-
-// .program__item::after{
-//   @media (min-width: @tablet-width){
-//     content: "1";
-//     position: absolute;
-//     width: 200px;
-//     height: 200px;
-//     font-size: 250px;
-//     color: #F2F2F2;
-//     z-index: -1;
-//   }
-// }
 
 .program__text-list {
   font-size: 14px;
@@ -116,8 +94,8 @@
   }
 }
 
-.program__text-list br{
-  @media (max-width: @mobile-width-only){
+.program__text-list br {
+  @media (max-width: @mobile-width-only) {
     display: none;
   }
 }
@@ -125,7 +103,7 @@
 //form//
 
 .program__item--leaf {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 230px;
     padding: 0;
   }
@@ -133,8 +111,9 @@
   &::before {
     background-image: url("../../img/icon-leaf.svg");
   }
+
   &::after {
-      @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       font-family: @main-font;
       width: 120px;
       content: "1";
@@ -149,17 +128,17 @@
 }
 
 .program__item--tub {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 246px;
     padding: 0;
-
   }
 
   &::before {
     background-image: url("../../img/icon-tub.svg");
   }
+
   &::after {
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       font-family: @main-font;
       width: 120px;
       content: "2";
@@ -174,17 +153,17 @@
 }
 
 .program__item--eat {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 247px;
     padding: 0;
-
   }
 
   &::before {
     background-image: url("../../img/icon-eat.svg");
   }
+
   &::after {
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       font-family: @main-font;
       width: 120px;
       content: "3";
@@ -199,10 +178,9 @@
 }
 
 .program__item--alarm {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 249px;
     padding: 0;
-
   }
 
   &::before {
