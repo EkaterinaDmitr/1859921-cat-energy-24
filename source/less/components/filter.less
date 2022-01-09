@@ -99,13 +99,16 @@
 }
 
 .filter__user-data-input:hover {
-  border: 1px solid #CDCDCD;
+  outline: 1px solid #CDCDCD;
 }
 
 .filter__user-data-input:focus {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
+.filter__user-data-input:invalid {
+  outline: 2px solid #FF8282;
+}
 
 
 .filter__program-choose{
@@ -135,7 +138,7 @@
 }
 
 .filter__program-choose-item:hover .filter__program-choose-label::before{
-  border: 1px solid #BABABA;
+  outline: 1px solid #BABABA;
 }
 
 
@@ -324,6 +327,19 @@
 
 }
 
+.filter__user-contacts-input:hover{
+  outline: 1px solid #CDCDCD;
+}
+
+.filter__user-contacts-input:focus + .filter__user-contacts-svg {
+  outline: 2px solid #444444;
+  fill: #68B738;
+}
+
+.filter__user-contacts-input:invalid {
+
+}
+
 .filter__user-contacts-svg{
   position: relative;
   left: -40px;
@@ -448,6 +464,7 @@
   display: flex;
   align-items: center;
   margin: 0 0 0 37px;
+  cursor: pointer;
 }
 
 .filter__request{
@@ -469,6 +486,7 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

@@ -60,7 +60,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F2F2F2;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -302,10 +301,20 @@
   }
 }
 
+.product__button:hover {
+  background-color: #5EAA2F;
+
+}
+
+.product__button:active {
+  color: #ffffff4d;
+
+}
+
 .product__button-all {
   font-family: @main-font;
   font-size: 16px;
-  background-color: @gray;
+  background-color: @gray--light;
   text-decoration: none;
   text-transform: uppercase;
   color: @text-color;
@@ -323,4 +332,14 @@
     padding: 11px 30px;
     width: 170px;
   }
+}
+
+.product__button-all:hover {
+  background-color: #EBEBEB;
+
+}
+
+.product__button-all:active {
+  color: #44444430;
+
 }
