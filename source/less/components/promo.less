@@ -23,6 +23,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promo-bg@2x.jpg");
+      background-size: 320px auto;
+    }
+
     @media (min-width: @tablet-width){
       display: none;
     }
@@ -40,6 +45,11 @@
       margin-top: -137px;
       right: 0;
       left: 50%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/promo-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 
