@@ -1,54 +1,47 @@
 .program {
   display: grid;
-  padding-top: 20px;
+  padding-top: 1px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 46px;
+    padding-top: 25px;
     padding-bottom: 90px;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 72px;
+    padding-top: 82px;
     padding-bottom: 120px;
   }
 }
 
-// .program{
-//   text-transform: uppercase;
-
-//   @media (min-width: @desktop-width){
-//     margin: 0 110px;
-//     padding: 0;
-//     max-width: 1220px;
-//   }
-// }
-
-.program__description{
+.program__description {
   font-family: @main-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: @base-font-weight;
   color: @text-color-heading;
   text-transform: none;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
+    min-height: 60px;
   }
-
 }
 
 .program__list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 
   @media (min-width: @tablet-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
-    row-gap: 135px;
+    row-gap: 180px;
+    justify-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,10 +50,10 @@
   }
 }
 
-.program__item{
+.program__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: -2px;
   position: relative;
   padding-left: 80px;
 
@@ -69,49 +62,49 @@
     content: "";
     width: 60px;
     height: 60px;
-    top: 10px;
     left: 0;
     background-color: @btn-color;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     flex-direction: column;
   }
-
 }
-
-// .program__item::after{
-//   @media (min-width: @tablet-width){
-//     content: "1";
-//     position: absolute;
-//     width: 200px;
-//     height: 200px;
-//     font-size: 250px;
-//     color: #F2F2F2;
-//     z-index: -1;
-//   }
-// }
 
 .program__text-list {
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
+  margin: 12px 0 16px;
+  min-height: 50px;
 
   @media (min-width: @tablet-width) {
     position: inherit;
     top: 50%;
     left: 0;
-    padding-top: 31px;
+    padding-top: 40px;
     line-height: 24px;
+    font-size: 16px;
+  }
+}
+
+.program__text-list br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
 //form//
 
 .program__item--leaf {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 230px;
     padding: 0;
   }
@@ -119,8 +112,9 @@
   &::before {
     background-image: url("../../img/icon-leaf.svg");
   }
+
   &::after {
-      @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       font-family: @main-font;
       width: 120px;
       content: "1";
@@ -129,23 +123,23 @@
       color: rgb(242, 242, 242);
       z-index: -1;
       top: 100px;
-      right: 25px;
+      right: -8px;
     }
   }
 }
 
 .program__item--tub {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 246px;
     padding: 0;
-
   }
 
   &::before {
     background-image: url("../../img/icon-tub.svg");
   }
+
   &::after {
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       font-family: @main-font;
       width: 120px;
       content: "2";
@@ -154,23 +148,23 @@
       color: rgb(242, 242, 242);
       z-index: -1;
       top: 100px;
-      right: 25px;
+      right: 14px;
     }
   }
 }
 
 .program__item--eat {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 247px;
     padding: 0;
-
   }
 
   &::before {
     background-image: url("../../img/icon-eat.svg");
   }
+
   &::after {
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       font-family: @main-font;
       width: 120px;
       content: "3";
@@ -179,16 +173,15 @@
       color: rgb(242, 242, 242);
       z-index: -1;
       top: 100px;
-      right: 25px;
+      right: 13px;
     }
   }
 }
 
 .program__item--alarm {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 249px;
     padding: 0;
-
   }
 
   &::before {
@@ -205,7 +198,7 @@
       color: rgb(242, 242, 242);
       z-index: -1;
       top: 100px;
-      right: 25px;
+      right: 13px;
     }
   }
 }

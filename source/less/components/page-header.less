@@ -1,9 +1,10 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin: 0;
 
   @media (min-width: @tablet-width){
     flex-direction: row;
@@ -13,6 +14,7 @@
   }
 
   @media (min-width: @desktop-width){
+    margin: 0 auto;
     padding: 0;
     width: 1220px;
     justify-content: space-between;
@@ -20,7 +22,7 @@
 }
 
 .page-header__logo {
-  padding: 10px 0;
+  padding: 10px 0 13px;
   text-decoration: none;
 
   &:hover {
@@ -33,6 +35,7 @@
 
   @media (min-width: @tablet-width) {
     width: 30%;
+    padding: 25px 0 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,5 +48,7 @@
   @media (min-width: @tablet-width){
     margin-right: auto;
   }
-
+  @media (min-width: @desktop-width) {
+    padding-top: 33px;
+  }
 }

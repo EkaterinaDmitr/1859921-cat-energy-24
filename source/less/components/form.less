@@ -6,10 +6,16 @@
   display: flex;
   align-items: center;
   margin: 0;
+  font-family: @main-font;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 1px;
+
   }
 }
 
@@ -23,18 +29,36 @@
   min-height: auto;
 }
 
-.form__legend{
-  padding-right: 25px;
+.form__legend {
   background-color: @white;
   font-size: 24px;
   line-height: 26px;
   font-family: @main-font;
+  margin-bottom: 36px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    background-color: @btn-color;
+    height: 2px;
+    width: 100%;
+    margin-top: 20px;
+    z-index: -2;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 76px;
     margin-left: -20px;
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
+

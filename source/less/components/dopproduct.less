@@ -2,22 +2,29 @@
   padding: 0;
   list-style-type: none;
 }
+
+
 .dopproduct__button{
+  font-family: @main-font;
   width: 280px;
   background-color: @btn-color;
   text-decoration: none;
   text-transform: uppercase;
   color: @contrasting-color;
-  padding: 10px 109px;
+  padding: 8px 110px;
   text-align: center;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width){
-    padding: 7px 220px;
+    padding: 9px 285px;
+    font-family: @main-font;
   }
   @media (min-width: @desktop-width) {
-    padding: 10px 53px;
+    padding: 11px;
     height: fit-content;
-    width: auto;
+    width: 100%;
+    margin-top: 13px;
   }
 
 }
@@ -29,9 +36,27 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @gray--darken;
+  margin-bottom: 13px;
 
-  @media (min-width: @desktop-width){
-    margin-right: 130px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 163px;
+  }
+}
+
+.dopproduct__heading::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: 1px solid #E6E6E6;
+    margin-top: -10px;
   }
 }
 
@@ -42,6 +67,15 @@
   font-size: 14px;
   line-height: 14px;
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    min-width: 136px;
+  }
 }
 
 .dopproduct__desc-meaning {
@@ -50,27 +84,55 @@
   font-weight: @base-font-weight;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width)  {
+  }
 }
 
 .dopproduct__desc{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
+    min-width: 289px;
+    margin-right: 40px;
+
+  }
 }
 
 .dopproduct__item {
+  margin-bottom: 39px;
+
   @media (min-width: @desktop-width) {
     justify-content: space-between;
     grid-template-columns: 1fr 244px;
     display: grid;
+    margin-bottom: -3px;
+
   }
 
 }
 
+
 .dopproduct__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
   @media (min-width: @desktop-width){
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
   }
 }

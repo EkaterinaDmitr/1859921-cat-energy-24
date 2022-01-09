@@ -2,15 +2,74 @@
   padding: 15px 0 40px;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 0 64px;
+    align-items: center;
+
+  }
+  @media (min-width: @desktop-width){
+    margin-left: 25px;
+    margin-right: -52px;
+  }
 }
 
 .images-toggle__before{
   background: none;
   border: none;
-  font-weight: @main-font;
+  font-family: @main-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 0 14px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    text-decoration: underline 1px dotted #00000024;
+    text-underline-offset: 5px;
+
+
+    &:hover {
+      text-decoration: underline 1px solid #00000024;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+}
+
+.images-toggle__after {
+  background: none;
+  border: none;
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    text-decoration: underline 1px dotted #00000024;
+    text-underline-offset: 5px;
+
+
+    &:hover {
+      text-decoration: underline 1px solid #00000024;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.image-toogle__checked {
+  @media (min-width: @tablet-width)  {
+    margin-left: 225px;
+  }
 }
 
 .images-toggle__compare {
@@ -43,8 +102,18 @@
   border: 1px solid #CDCDCD;
   width: 86px;
   height: 14px;
-  right: -35px;
-  top: 0px;
+  right: -29px;
+  top: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+    height: 6px;
+    right: -87px;
+    top: -6px;
+    border: none;
+    background: #DCDCDC;
+  }
+
 }
 
 .image-toogle__button-for::before {
@@ -56,12 +125,43 @@
   width: 36px;
   height: 6px;
   z-index: 1;
-  top: 4px;
-  right: 10px;
+  top: 5px;
+  right: 15px;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    right: 109px;
+    margin-top: -25px;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    background: radial-gradient(@btn-color, @btn-color 4px, @white 4px, @white 10px);
+
+    &:hover {
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      box-sizing: border-box;
+    }
+
+    &:active {
+      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+      border: 1px solid #68B738;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.image-toogle__button-for::before:active {
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+  border: 1px solid #68B738;
+  box-sizing: border-box;
 }
 
 .image-toogle__button:checked + .image-toogle__button-for::before {
-  right: -30px;
+  @media (max-width: @mobile-width-only) {
+    right: -24px;
+  }
 }
 
 .images-toggle__compare::after{
@@ -70,13 +170,4 @@
   border-radius: 6px;
   width: 36px;
   height: 6px;
-}
-
-.images-toggle__after {
-  background: none;
-  border: none;
-  font-weight: @main-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
