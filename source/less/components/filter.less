@@ -134,7 +134,7 @@
 }
 
 .filter__program-choose-item {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .filter__program-choose-item:hover .filter__program-choose-label::before{
@@ -191,11 +191,14 @@
 //   border-radius: 20px;
 // }
 
+
+// не центрует по предложенному варианту
 .filter__program-choose-input[type="radio"]:checked + .form__label {
   &::after {
     position: absolute;
-    top: 1px;
-    left: 8px;
+    left: 14px;
+    top: 45%;
+    transform: translate(-50%, -50%);
     width: 13px;
     height: 13px;
     background-color: @btn-color;
@@ -203,14 +206,12 @@
     content: "";
 
     @media (min-width: @tablet-width){
-      top: 4px;
-      left: 18px;
+      left: 27px;
       width: 18px;
       height: 18px;
     }
     @media (min-width: @desktop-width) {
-      top: 5px;
-      left: 17px;
+      left: 25px;
     }
   }
 }
@@ -327,18 +328,18 @@
 
 }
 
-.filter__user-contacts-input:hover{
-  outline: 1px solid #CDCDCD;
-}
+// .filter__user-contacts-input:hover{
+//   outline: 1px solid #CDCDCD;
+// }
 
-.filter__user-contacts-input:focus + .filter__user-contacts-svg {
-  outline: 2px solid #444444;
-  fill: #68B738;
-}
+// .filter__user-contacts-input:focus + .filter__user-contacts-svg {
+//   outline: 2px solid #444444;
+//   fill: #68B738;
+// }
 
-.filter__user-contacts-input:invalid {
+// .filter__user-contacts-input:invalid {
 
-}
+// }
 
 .filter__user-contacts-svg{
   position: relative;
@@ -411,11 +412,14 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0 0 36px 0;
+  margin: -5px 0 36px 0;
 
     @media (min-width: @tablet-width){
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    margin-top: -20px;
+    margin-bottom: 24px;
 
   }
     @media (min-width: @desktop-width){
@@ -426,7 +430,16 @@
   }
 }
 .filter__other-products-item:not(:last-child){
-  margin-bottom: 11px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+    margin-right: 125px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 
 }
 
@@ -473,6 +486,7 @@
 
   @media (min-width: @tablet-width){
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -491,6 +505,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     padding: 15px 65px;
+    margin: 0;
   }
   @media (min-width: @desktop-width){
     padding: 16px 209px;
@@ -508,6 +523,10 @@
 .filter__text {
   text-transform: none;
   margin: 0 0 0 66px;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .filter__fieldset-radio {

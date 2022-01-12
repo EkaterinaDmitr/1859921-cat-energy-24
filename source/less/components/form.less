@@ -35,6 +35,10 @@
   line-height: 26px;
   font-family: @main-font;
   margin-bottom: 36px;
+  padding-left: 40px;
+  padding-right: 23px;
+  margin-left: -40px;
+  max-width: 244px;
 
   &::before {
     position: absolute;
@@ -43,16 +47,18 @@
     background-color: @btn-color;
     height: 2px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 13px;
     z-index: -2;
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 20px;
-    margin-bottom: 76px;
-    margin-left: -20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 75px;
+    margin-left: -40px;
     font-size: 36px;
     line-height: 36px;
+    max-width: 595px;
   }
 
   @media (min-width: @desktop-width) {

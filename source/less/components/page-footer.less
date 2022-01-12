@@ -45,7 +45,20 @@
     padding: 0;
 
   }
+
 }
+
+
+.page-footer__link:hover path{
+  fill: @basic-green;
+}
+
+.page-footer__link:active path{
+  fill: @basic-green;
+  opacity: 0.3;
+}
+// почему иконка facebook с заливкой stroke? из-за этого она неправильно перекрашивается
+
 
 .page-footer__link:not(:last-child) {
   margin-right: 30px;
@@ -141,9 +154,9 @@
   display: none;
     @media (min-width: @tablet-width) {
     display: flex;
-      &:hover {
-      stroke: #68B738;
-      }
+      // &:hover {
+      // stroke: #68B738;
+      // }
       &:active {
       opacity: 0.3;
       }
