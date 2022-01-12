@@ -16,13 +16,17 @@
   line-height: 24px;
   color: @text-color-heading;
   margin-bottom: 49px;
+  background-color: @bg-color;
+  max-width: 247px;
+
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-top: -27px;
-    margin-left: 37px;
-    background-color: @bg-color;
+    padding-left: 37px;
+    max-width: 410px;
+
   }
   @media (min-width: @desktop-width) {
     margin: 1px 0 13px;
@@ -52,13 +56,15 @@
 .additional-catalog__title::after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 20px;
   background-color: @btn-color;
   height: 2px;
   width: 100%;
   margin-top: 20px;
   z-index: -2;
-
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
 }
 
 .additional-catalog__product {
