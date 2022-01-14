@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     column-gap: 80px;
+    align-items: start;
   }
 }
 
@@ -154,44 +155,6 @@
 
 }
 
-// .filter__program-choose-input[type="radio"]:checked + .form__label {
-//   // position: absolute;
-//   left: 8px;
-//   top: 2px;
-//   width: 14px;
-//   height: 14px;
-//   border-radius: 50%;
-//   background-color: @btn-color;
-//   content: "";
-
-//   @media (min-width: @tablet-width) {
-//     left: 18px;
-//     top: 6px;
-//     width: 18px;
-//     height: 18px;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     left: 17px;
-//     top: 8px;
-//   }
-// }
-
-
-// .ffilter__program-choose-label::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   display: block;
-//   box-sizing: border-box;
-//   width: 20px;
-//   height: 20px;
-//   border: 2px solid black;
-//   border-radius: 20px;
-// }
-
-
 // не центрует по предложенному варианту
 .filter__program-choose-input[type="radio"]:checked + .form__label {
   &::after {
@@ -212,6 +175,7 @@
     }
     @media (min-width: @desktop-width) {
       left: 25px;
+      top: 50%;
     }
   }
 }

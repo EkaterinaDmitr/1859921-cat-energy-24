@@ -1,9 +1,17 @@
 .dopproduct__list {
   padding: 0;
   list-style-type: none;
+  border-bottom: 1px solid @border--dark;
+
 
   @media (min-width: @tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border-bottom: 1px solid @border--dark;
+
   }
 }
 
@@ -52,6 +60,7 @@
   text-transform: uppercase;
   color: @gray--darken;
   margin-bottom: 13px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -61,30 +70,31 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 163px;
+    margin-bottom: 30px;
   }
 }
 
-.dopproduct__heading::before {
-  content: "";
-  position: absolute;
-  width: 280px;
-  left: 20px;
-  border: 1px solid @border--dark;
-  margin-top: 115px;
+// .dopproduct__heading::before {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   left: 0;
+//   border: 1px solid @border--dark;
+//   top: 115px;
 
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-  @media (min-width: @desktop-width) {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 62%;
-    left: auto;
-    border: 1px solid @border--dark;
-    margin-top: 46px;
-  }
-}
+//   @media (min-width: @tablet-width) {
+//     display: none;
+//   }
+//   // @media (min-width: @desktop-width) {
+//   //   display: block;
+//   //   content: "";
+//   //   position: absolute;
+//   //   width: 62%;
+//   //   left: auto;
+//   //   border: 1px solid @border--dark;
+//   //   top: 46px;
+//   // }
+// }
 
 .dopproduct__desc-description {
   font-family: @base-font-family;
@@ -139,8 +149,8 @@
 }
 
 .dopproduct__item {
-  margin-bottom: 40px;
-  // border-top: 1px solid @border--dark;
+  margin-bottom: 24px;
+  border-top: 1px solid @border--dark;
 
   @media (min-width: @tablet-width) {
     padding: 5px 37px 36px;
@@ -152,11 +162,11 @@
     justify-content: space-between;
     grid-template-columns: 1fr 244px;
     display: grid;
-    margin-bottom: -3px;
     padding: 0;
     border: none;
-
+    border-top: 1px solid @border--dark;
   }
+
 }
 
 
