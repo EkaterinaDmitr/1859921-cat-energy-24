@@ -8,7 +8,7 @@
   }
 }
 
-.product__list{
+.product__list {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -19,34 +19,33 @@
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 60px;
-    align-items: end;
+    // align-items: end;
+    margin-bottom: 14px;
   }
   @media (min-width: @desktop-width){
     grid-template-columns: 245px 245px 245px 245px;
     gap: 80px;
+    margin-bottom: 23px;
   }
 }
-// .product__item:not(:last-child){
-
-
-// }
 
 .product__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // align-items: center;
-  // justify-items: stretch;
   margin-bottom: 45px;
+  position: relative;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: @gray--light;
     padding-bottom: 35px;
     margin: 0;
     margin-bottom: 82px;
+    min-height: 430px;
 
   }
 
@@ -56,21 +55,41 @@
   }
 }
 
-.product__item-all{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F2F2F2;
-  margin: 0;
-
-  @media (min-width: @tablet-width) {
-    position: relative;
-    top: -84px;
-  }
-  @media (min-width: @desktop-width) {
+.product__item::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 110%;
+    left: -20px;
+    border: 1px solid @border--light;
+    top: 185px;
   }
 }
 
+.product__item-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @gray--light;
+    bottom: 57px;
+    max-height: 430px;
+  }
+
+}
+
+.product__item-all::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: 1px solid @border--light;
+    margin-top: 185px;
+  }
+}
 
 .product__link {
   @media (min-width: @tablet-width) {
@@ -140,7 +159,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    top: -106px;
+    top: 99px;
     right: -17px;
     width: 134px;
     font-size: 20px;
@@ -149,7 +168,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: -77px;
+    top: 165px;
+    left: 0;
     margin: 0;
   }
 }
@@ -168,12 +188,12 @@
   top: 21px;
 
   @media (min-width: @tablet-width) {
-    top: -124px;
+    top: 80px;
     right: -30px;
     width: 60px;
   }
   @media (min-width: @desktop-width) {
-    top: -157px;
+    top: 86px;
     right: -29px;
   }
 
@@ -189,12 +209,12 @@
   top: 7px;
 
   @media (min-width: @tablet-width) {
-    top: -154px;
+    top: 50px;
     height: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    top: -187px;
+    top: 57px;
     right: -1px;
   }
 
@@ -223,12 +243,12 @@
     font-size: 16px;
     line-height: 18px;
     width: 167px;
-    top: -87px;
+    top: 116px;
 
   }
 
   @media (min-width: @desktop-width) {
-    top: -70px;
+    top: 190px;
   }
 }
 
@@ -264,11 +284,26 @@
     padding-bottom: 18px;
     padding-left: 11px;
   }
+
   @media (min-width: @desktop-width) {
     padding-bottom: 16px;
     padding-left: 0;
   }
 
+}
+
+.product__desc-description::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 250px;
+    height: 1px;
+    background-color: @border--dark;
+    position: absolute;
+    margin-top: 23px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 170px;
+  }
 }
 
 .product__desc-meaning {
@@ -292,6 +327,8 @@
   padding: 10px 109px;
   grid-column: 1/3;
 
+
+
   @media (min-width: @tablet-width) {
     padding: 11px 93px;
   }
@@ -302,10 +339,20 @@
   }
 }
 
+.product__button:hover {
+  background-color: #5EAA2F;
+
+}
+
+.product__button:active {
+  color: #ffffff4d;
+
+}
+
 .product__button-all {
   font-family: @main-font;
   font-size: 16px;
-  background-color: @gray;
+  background-color: @gray--light;
   text-decoration: none;
   text-transform: uppercase;
   color: @text-color;
@@ -314,7 +361,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    top: -24px;
+    top: 180px;
     padding: 11px 78px;
 
   }
@@ -322,5 +369,16 @@
   @media (min-width: @desktop-width) {
     padding: 11px 30px;
     width: 170px;
+    top: 254px;
   }
+}
+
+.product__button-all:hover {
+  background-color: #EBEBEB;
+
+}
+
+.product__button-all:active {
+  color: #44444430;
+
 }
