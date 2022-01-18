@@ -1,9 +1,9 @@
-.page-footer{
+.page-footer {
   background-color: @gray--light;
   color: @text-color;
 }
 
-.page-footer__wrapper{
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@
   @media (max-width: @mobile-width-only) {
     padding: 27px 0 46px;
   }
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     margin-right: 30px;
   }
 }
@@ -37,7 +37,7 @@
   opacity: 0.6;
 }
 
-.page-footer__link{
+.page-footer__link {
   text-decoration: none;
   color: @text-color;
 
@@ -53,12 +53,18 @@
   fill: @basic-green;
 }
 
-.page-footer__link:active path{
-  fill: @basic-green;
-  opacity: 0.3;
+.page-footer__icon--tablet-fb:hover path{
+  fill: none;
+  stroke: @basic-green;
 }
-// почему иконка facebook с заливкой stroke? из-за этого она неправильно перекрашивается
 
+.page-footer__icon--tablet-fb:active path{
+  stroke: @basic-green;
+}
+
+.page-footer__link:active path{
+  opacity: 0.6;
+}
 
 .page-footer__link:not(:last-child) {
   margin-right: 30px;
@@ -83,8 +89,14 @@
   }
 }
 
+.page-footer__link-academy:hover{
+  fill: none;
+  stroke: @basic-green;
+}
+
 .page-footer__link-academy:active {
-  color: #44444460;
+  color: @text-color;
+  opacity: 0.3;
 }
 
 .page-footer__text {
