@@ -9,8 +9,8 @@
 
   }
   @media (min-width: @desktop-width){
-    margin-left: 25px;
-    margin-right: -52px;
+    margin-left: 34px;
+    margin-right: -62px;
   }
 }
 
@@ -48,6 +48,7 @@
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 0 14px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -66,7 +67,8 @@
 
 .image-toogle__checked {
   @media (min-width: @tablet-width)  {
-    margin-left: 225px;
+    margin-left: 226px;
+    margin-top: 3px;
   }
 }
 
@@ -86,9 +88,12 @@
 .image-toogle__button-for {
   cursor: pointer;
   position: relative;
-  right: -8px;
-  top: 3px;
-
+  right: -29px;
+  top: 0;
+  @media (min-width: @tablet-width) {
+    right: -17px;
+    top: 1px;
+  }
 }
 
 .image-toogle__button-for::after {
@@ -99,8 +104,8 @@
   border: 1px solid #CDCDCD;
   width: 86px;
   height: 14px;
-  right: -29px;
-  top: 1px;
+  right: -16px;
+  top: 2px;
 
   @media (min-width: @tablet-width) {
     width: 426px;
@@ -122,8 +127,8 @@
   width: 36px;
   height: 6px;
   z-index: 1;
-  top: 5px;
-  right: 15px;
+  top: 6px;
+  right: 28px;
 
   @media (min-width: @tablet-width) {
     border-radius: 50%;
