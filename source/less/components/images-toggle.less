@@ -141,20 +141,15 @@
     box-sizing: border-box;
     background: radial-gradient(@btn-color, @btn-color 4px, @white 4px, @white 10px);
 
-    &:hover {
-      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
-      box-sizing: border-box;
-    }
-
-    &:active {
-      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
-      border: 1px solid #68B738;
-      box-sizing: border-box;
-    }
   }
 }
 
-.image-toogle__button-for::before:active {
+.image-toogle__button-for:hover:before {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  box-sizing: border-box;
+}
+
+.image-toogle__button-for:active::before {
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
   border: 1px solid #68B738;
   box-sizing: border-box;

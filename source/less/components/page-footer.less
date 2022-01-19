@@ -48,22 +48,48 @@
     padding: 0;
 
   }
-
 }
 
+.page-footer__icon--vk {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
 
-.page-footer__link:hover path{
+.page-footer__icon--instagram {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__icon--facebook {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__link:hover .page-footer__icon--vk path {
   fill: @basic-green;
 }
 
-.page-footer__icon--tablet-fb:hover path{
-  fill: none;
-  stroke: @basic-green;
+.page-footer__link:hover .page-footer__icon--instagram path {
+  fill: @basic-green;
 }
 
-.page-footer__icon--tablet-fb:active path{
-  stroke: @basic-green;
+.page-footer__link:hover .page-footer__icon--facebook path {
+  fill: @basic-green;
 }
+// .page-footer__icon--tablet-fb:hover path{
+//   fill: none;
+//   stroke: @basic-green;
+// }
+
+// .page-footer__icon--tablet-fb:active path{
+//   stroke: @basic-green;
+// }
 
 .page-footer__link:active path{
   opacity: 0.6;
@@ -87,7 +113,7 @@
     display: flex;
     align-items: center;
   }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     display: flex;
   }
 }
@@ -152,28 +178,29 @@
   }
 }
 
-.page-footer__icon--mobile {
-  @media (max-width: @mobile-width-only) {
-    display: block;
-    &:hover {
-      stroke: #68B738;;
-    }
-    &:active {
-      opacity: 0.3;
-      }
-  }
-  display: none;
-}
+// .page-footer__icon {
+//   @media (max-width: @mobile-width-only) {
+//     display: block;
+//     &:hover {
+//       stroke: #68B738;;
+//     }
+//     &:active {
+//       opacity: 0.3;
+//       }
+//   }
 
-.page-footer__icon--tablet {
-  display: none;
-    @media (min-width: @tablet-width) {
-    display: flex;
-      // &:hover {
-      // stroke: #68B738;
-      // }
-      &:active {
-      opacity: 0.3;
-      }
-    }
-}
+
+// }
+
+// .page-footer__icon--tablet {
+//   display: none;
+//     @media (min-width: @tablet-width) {
+//     display: flex;
+//       // &:hover {
+//       // stroke: #68B738;
+//       // }
+//       &:active {
+//       opacity: 0.3;
+//       }
+//     }
+// }
