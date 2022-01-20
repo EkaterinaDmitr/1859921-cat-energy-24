@@ -71,34 +71,33 @@
   }
 }
 
-.page-footer__link:hover .page-footer__icon--vk path {
+.page-footer__link svg {
+  fill: @special-grey;
+}
+
+
+.page-footer__link .page-footer__icon--facebook {
+  fill: none;
+  stroke: @special-grey;
+
+  &:hover {
+    stroke: @basic-green;
+  }
+}
+
+
+.page-footer__link:hover svg {
   fill: @basic-green;
 }
 
-.page-footer__link:hover .page-footer__icon--instagram path {
-  fill: @basic-green;
-}
-
-.page-footer__link:hover .page-footer__icon--facebook path {
-  fill: @basic-green;
-}
-// .page-footer__icon--tablet-fb:hover path{
-//   fill: none;
-//   stroke: @basic-green;
-// }
-
-// .page-footer__icon--tablet-fb:active path{
-//   stroke: @basic-green;
-// }
-
-.page-footer__link:active path{
-  opacity: 0.6;
+.page-footer__link:active svg {
+  opacity: 0.3;
 }
 
 .page-footer__link:not(:last-child) {
   margin-right: 30px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     margin-right: 26px;
   }
 }
@@ -107,6 +106,7 @@
   text-decoration: none;
   color: @text-color;
   display: flex;
+  fill: @special-grey;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -119,8 +119,7 @@
 }
 
 .page-footer__link-academy:hover{
-  fill: none;
-  stroke: @basic-green;
+  fill: @basic-green;
 }
 
 .page-footer__link-academy:active {
@@ -129,6 +128,7 @@
 }
 
 .page-footer__text {
+  color: @special-grey;
   margin: 10px 139px 0 0;
   font-size: 16px;
 
@@ -144,6 +144,7 @@
     align-items: center;
   }
 }
+
 .page-footer__social-container::before {
   content: "";
   width: 88%;
@@ -172,35 +173,8 @@
   }
 }
 
-.page-footer__academy-wrapper{
+.page-footer__academy-wrapper {
   @media (max-width: @mobile-width-only) {
     padding: 37px 0 30px;
   }
 }
-
-// .page-footer__icon {
-//   @media (max-width: @mobile-width-only) {
-//     display: block;
-//     &:hover {
-//       stroke: #68B738;;
-//     }
-//     &:active {
-//       opacity: 0.3;
-//       }
-//   }
-
-
-// }
-
-// .page-footer__icon--tablet {
-//   display: none;
-//     @media (min-width: @tablet-width) {
-//     display: flex;
-//       // &:hover {
-//       // stroke: #68B738;
-//       // }
-//       &:active {
-//       opacity: 0.3;
-//       }
-//     }
-// }
