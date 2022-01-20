@@ -1,4 +1,4 @@
-.images-toggle{
+.images-toggle {
   padding: 15px 0 40px;
   display: flex;
   justify-content: space-around;
@@ -9,12 +9,12 @@
 
   }
   @media (min-width: @desktop-width){
-    margin-left: 25px;
-    margin-right: -52px;
+    margin-left: 34px;
+    margin-right: -62px;
   }
 }
 
-.images-toggle__before{
+.images-toggle__before {
   background: none;
   border: none;
   font-family: @main-font;
@@ -38,7 +38,6 @@
       text-decoration: none;
     }
   }
-
 }
 
 .images-toggle__after {
@@ -49,12 +48,12 @@
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 0 14px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     text-decoration: underline 1px dotted #00000024;
     text-underline-offset: 5px;
-
 
     &:hover {
       text-decoration: underline 1px solid #00000024;
@@ -68,7 +67,8 @@
 
 .image-toogle__checked {
   @media (min-width: @tablet-width)  {
-    margin-left: 225px;
+    margin-left: 226px;
+    margin-top: 3px;
   }
 }
 
@@ -79,8 +79,6 @@
   background: #FFFFFF;
   border: 1px solid #CDCDCD;
   cursor: pointer;
-
-
 }
 
 .image-toogle__button {
@@ -90,8 +88,12 @@
 .image-toogle__button-for {
   cursor: pointer;
   position: relative;
-  right: -8px;
-  top: 3px;
+  right: -29px;
+  top: 0;
+  @media (min-width: @tablet-width) {
+    right: -17px;
+    top: 1px;
+  }
 }
 
 .image-toogle__button-for::after {
@@ -102,8 +104,8 @@
   border: 1px solid #CDCDCD;
   width: 86px;
   height: 14px;
-  right: -29px;
-  top: 1px;
+  right: -16px;
+  top: 2px;
 
   @media (min-width: @tablet-width) {
     width: 426px;
@@ -125,8 +127,8 @@
   width: 36px;
   height: 6px;
   z-index: 1;
-  top: 5px;
-  right: 15px;
+  top: 6px;
+  right: 28px;
 
   @media (min-width: @tablet-width) {
     border-radius: 50%;
@@ -139,20 +141,15 @@
     box-sizing: border-box;
     background: radial-gradient(@btn-color, @btn-color 4px, @white 4px, @white 10px);
 
-    &:hover {
-      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
-      box-sizing: border-box;
-    }
-
-    &:active {
-      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
-      border: 1px solid #68B738;
-      box-sizing: border-box;
-    }
   }
 }
 
-.image-toogle__button-for::before:active {
+.image-toogle__button-for:hover:before {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  box-sizing: border-box;
+}
+
+.image-toogle__button-for:active::before {
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
   border: 1px solid #68B738;
   box-sizing: border-box;

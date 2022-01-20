@@ -1,31 +1,34 @@
-.page-footer{
+.page-footer {
   background-color: @gray--light;
   color: @text-color;
 }
 
-.page-footer__wrapper{
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 7px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 58px;
+    padding-top: 46px;
     padding-bottom: 55px;
   }
   @media (min-width: @desktop-width){
     padding-top: 46px;
+    margin-top: 17px;
   }
 }
 
 .page-footer__link-logo {
+
   @media (max-width: @mobile-width-only) {
-    padding: 27px 0 46px;
+    padding: 27px 0 52px;
   }
-  @media (min-width: @tablet-width){
-    margin-right: 30px;
+  @media (min-width: @tablet-width) {
+    margin-right: 31px;
   }
 }
 
@@ -37,7 +40,7 @@
   opacity: 0.6;
 }
 
-.page-footer__link{
+.page-footer__link {
   text-decoration: none;
   color: @text-color;
 
@@ -45,26 +48,57 @@
     padding: 0;
 
   }
+}
 
+.page-footer__icon--vk {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__icon--instagram {
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.page-footer__icon--facebook {
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.page-footer__link svg {
+  fill: @special-grey;
 }
 
 
-.page-footer__link:hover path{
+.page-footer__link .page-footer__icon--facebook {
+  fill: none;
+  stroke: @special-grey;
+
+  &:hover {
+    stroke: @basic-green;
+  }
+}
+
+
+.page-footer__link:hover svg {
   fill: @basic-green;
 }
 
-.page-footer__link:active path{
-  fill: @basic-green;
+.page-footer__link:active svg {
   opacity: 0.3;
 }
-// почему иконка facebook с заливкой stroke? из-за этого она неправильно перекрашивается
-
 
 .page-footer__link:not(:last-child) {
   margin-right: 30px;
 
-  @media (min-width: @tablet-width){
-    margin-right: 20px;
+  @media (min-width: @tablet-width) {
+    margin-right: 26px;
   }
 }
 
@@ -72,27 +106,34 @@
   text-decoration: none;
   color: @text-color;
   display: flex;
+  fill: @special-grey;
 
   @media (min-width: @tablet-width) {
     padding: 0;
     display: flex;
     align-items: center;
   }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     display: flex;
   }
 }
 
+.page-footer__link-academy:hover{
+  fill: @basic-green;
+}
+
 .page-footer__link-academy:active {
-  color: #44444460;
+  color: @text-color;
+  opacity: 0.3;
 }
 
 .page-footer__text {
+  color: @special-grey;
   margin: 10px 139px 0 0;
   font-size: 16px;
 
   @media (min-width: @tablet-width) {
-    margin: -10px 24px 0px 0px;
+    margin: 0 24px 0 0;
   }
 }
 
@@ -103,13 +144,14 @@
     align-items: center;
   }
 }
+
 .page-footer__social-container::before {
   content: "";
   width: 88%;
   height: 1px;
   position: absolute;
   background-color: #d9d9d9;
-  margin-top: -19px;
+  margin-top: -25px;
   right: 20px;
 
   @media (min-width: @tablet-width){
@@ -123,7 +165,7 @@
   height: 1px;
   position: absolute;
   background-color: #d9d9d9;
-  margin-top: 44px;
+  margin-top: 38px;
   right: 20px;
 
   @media (min-width: @tablet-width){
@@ -131,34 +173,8 @@
   }
 }
 
-.page-footer__academy-wrapper{
+.page-footer__academy-wrapper {
   @media (max-width: @mobile-width-only) {
-    padding: 39px 0 30px;
+    padding: 37px 0 30px;
   }
-}
-
-.page-footer__icon--mobile {
-  @media (max-width: @mobile-width-only) {
-    display: block;
-    &:hover {
-      stroke: #68B738;;
-    }
-    &:active {
-      opacity: 0.3;
-      }
-  }
-  display: none;
-}
-
-.page-footer__icon--tablet {
-  display: none;
-    @media (min-width: @tablet-width) {
-    display: flex;
-      // &:hover {
-      // stroke: #68B738;
-      // }
-      &:active {
-      opacity: 0.3;
-      }
-    }
 }
