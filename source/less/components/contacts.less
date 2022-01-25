@@ -1,38 +1,24 @@
 .contacts {
   padding: 0;
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     position: relative;
   }
 }
 
-.contacts__map {
-  // margin-bottom: 20px;
-}
-
 .contacts__location-wrapper {
-
-
   @media (max-width: @mobile-width-only) {
     margin-bottom: 13px;
     margin-top: 16px;
   }
-  @media (min-width: @tablet-width){
-    // background-color: @gray--light;
-  }
-
-  @media (min-width: @desktop-width){
-
-  }
 }
 
-.contacts__address{
-  // position: absolute;
+.contacts__address {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     position: absolute;
     top: 105px;
     background-color: @bg-color;
@@ -42,41 +28,35 @@
   }
 }
 
-.contacts__heading{
+.contacts__heading {
   font-family: @main-font;
   font-size: 16px;
   font-weight: @base-font-weight;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: @black;
   margin-right: 13px;
   min-width: 128px;
 
-  @media (min-width: @tablet-width){
-
+  @media (min-width: @tablet-width) {
     width: 200px;
     font-size: 20px;
     line-height: 26px;
     margin: 62px 40px 64px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     margin: 0;
   }
 }
 
-.contacts__heading br {
-  @media (max-width: @mobile-width-only){
-    // display: none;
-  }
-}
-
-.contacts__text{
+.contacts__text {
   font-family: @base-font-family;
   font-size: 14px;
   line-height: 20px;
   color: @text-color;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     width: 160px;
@@ -84,7 +64,8 @@
     margin-right: 40px;
     margin-top: 10px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     text-align: left;
   }
 }
@@ -95,14 +76,13 @@
   }
 }
 
-.contacts__map-image{
-
+.contacts__map-image {
   border: 0;
   width: 100%;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     min-height: 400px;
-    }
+  }
 }
 
 .contacts__map {
@@ -122,12 +102,12 @@
   margin-top: 131px;
 
   @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx) {
+    (min-resolution: 2dppx) {
     background-image: url(../img/map-pin-mobile@2x.png);
     background-size: 57px auto;
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     background-image: url(../img/map-pin-desktop.png);
     width: 113px;
     height: 106px;
@@ -136,12 +116,13 @@
     position: absolute;
 
     @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx) {
+      (min-resolution: 2dppx) {
       background-image: url(../img/map-pin-desktop@2x.png);
       background-size: 113px auto;
     }
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     right: 29%;
     top: -1%;
   }
