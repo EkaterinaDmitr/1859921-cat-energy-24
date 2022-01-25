@@ -10,16 +10,6 @@
   }
 }
 
-// .form__label {
-//   margin-right: 14px;
-//   text-transform: uppercase;
-
-//   @media (min-width: @tablet-width) {
-//     margin-right: 18px;
-//     .text(20px; 30px);
-//   }
-// }
-
 .filter__user-data{
   margin: 0;
   padding: 25px 0;
@@ -35,20 +25,19 @@
   @media (min-width: @desktop-width) {
     padding: 0;
   }
-
 }
 
-.filter__user-data-list{
+.filter__user-data-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
 }
 
-.filter__user-data-item{
+.filter__user-data-item {
   display: flex;
   justify-content: flex-start
 }
+
 .filter__user-data-item:not(:last-child) {
   margin-bottom: 16px;
 
@@ -61,12 +50,7 @@
   }
 }
 
-
-.filter__user-data-label{
-
-}
-
-.filter__user-data-input{
+.filter__user-data-input {
   margin-left: 12px;
   padding: 13px 15px;
   flex: 1 1 auto;
@@ -111,8 +95,7 @@
   outline: 2px solid #FF8282;
 }
 
-
-.filter__program-choose{
+.filter__program-choose {
   border: none;
   margin: auto 23px 45px 20px;
 
@@ -138,7 +121,7 @@
   margin-bottom: 24px;
 }
 
-.filter__program-choose-item:hover .filter__program-choose-label::before{
+.filter__program-choose-item:hover .filter__program-choose-label::before {
   outline: 1px solid #BABABA;
 }
 
@@ -147,15 +130,12 @@
   opacity: 0.3;
 }
 
-.filter__program-choose-item:not(:last-child){
-
+.filter__program-choose-item:not(:last-child) {
   @media (min-width: @desktop-width) {
     margin-bottom: 23px;
   }
-
 }
 
-// не центрует по предложенному варианту
 .filter__program-choose-input[type="radio"]:checked + .form__label {
   &::after {
     position: absolute;
@@ -215,8 +195,7 @@
   }
 }
 
-
-.filter__user-contacts{
+.filter__user-contacts {
   border: none;
   padding: 0;
   margin: 0 0 25px 0;
@@ -249,22 +228,15 @@
   }
 }
 
-.filter__user-contacts-item{
-
-}
 .filter__user-contacts-item:not(:last-child) {
   margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 27px;
   }
-
-}
-.filter__user-contacts-label{
-
 }
 
-.filter__user-contacts-input{
+.filter__user-contacts-input {
   margin-left: 12px;
   padding: 13px 15px;
   flex: 1 1 auto;
@@ -289,31 +261,16 @@
       line-height: 30px;
     }
   }
-
 }
 
-// .filter__user-contacts-input:hover{
-//   outline: 1px solid #CDCDCD;
-// }
-
-// .filter__user-contacts-input:focus + .filter__user-contacts-svg {
-//   outline: 2px solid #444444;
-//   fill: #68B738;
-// }
-
-// .filter__user-contacts-input:invalid {
-
-// }
-
-.filter__user-contacts-svg{
+.filter__user-contacts-svg {
   position: relative;
   left: -40px;
 }
-.filter__comment{
+.filter__comment {
   border: none;
   padding: 0;
   margin: 0;
-
 }
 
 .filter__comment-title {
@@ -323,10 +280,9 @@
     margin-left: -53px;
     margin-bottom: 70px;
   }
-
 }
 
-.filter__comment-text{
+.filter__comment-text {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -359,19 +315,17 @@
   }
 }
 
-.filter__other-products{
+.filter__other-products {
   border: none;
   padding: 0;
   margin: 0;
-
-
 }
 
-.filter__other-products-title{
+.filter__other-products-title {
   text-transform: none;
 }
 
-.filter__other-products-list{
+.filter__other-products-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -393,7 +347,8 @@
     justify-content: space-between;
   }
 }
-.filter__other-products-item:not(:last-child){
+
+.filter__other-products-item:not(:last-child) {
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
@@ -404,17 +359,17 @@
     margin-right: 0;
     margin-bottom: 40px;
   }
-
 }
 
-.filter__other-products-item:hover .filter__other-products-label::before{
+.filter__other-products-item:hover .filter__other-products-label::before {
   border: 1px solid #BABABA;
 }
-.filter__other-products-item:active{
+
+.filter__other-products-item:active {
   opacity: 0.3;
 }
 
-.filter__other-products-label::before{
+.filter__other-products-label::before {
   position: relative;
   left: 0;
   width: 30px;
@@ -432,19 +387,19 @@
 .filter__other-products-input:checked + .filter__other-products-label::before {
   background: url("../img/tick-mini.svg") 50% 50% no-repeat;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     background: url("../img/tick-big.svg") 50% 50% no-repeat;
   }
 }
 
-.filter__other-products-label{
+.filter__other-products-label {
   display: flex;
   align-items: center;
   margin: 0 0 0 37px;
   cursor: pointer;
 }
 
-.filter__request{
+.filter__request {
   display: flex;
   flex-direction: column;
 
@@ -531,4 +486,3 @@
     bottom: 0;
   }
 }
-
