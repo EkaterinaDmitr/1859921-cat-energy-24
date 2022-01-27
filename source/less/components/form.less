@@ -34,10 +34,8 @@
   font-size: 24px;
   line-height: 26px;
   font-family: @main-font;
-  margin-bottom: 36px;
-  padding-left: 40px;
-  padding-right: 23px;
-  margin-left: -40px;
+  margin: 0 0 37px -40px;
+  padding: 0 23px 0 40px;
   max-width: 244px;
 
   &::before {
@@ -47,15 +45,17 @@
     background-color: @btn-color;
     height: 2px;
     width: 100%;
-    margin-top: 13px;
+    margin-top: 17px;
     z-index: -2;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 22px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 75px;
-    margin-left: -40px;
+    padding: 0 40px;
+    margin: 0 0 76px -40px;
     font-size: 36px;
     line-height: 36px;
     max-width: 595px;
@@ -63,7 +63,6 @@
 
   @media (min-width: @desktop-width) {
     margin-left: -40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px;
   }
 }

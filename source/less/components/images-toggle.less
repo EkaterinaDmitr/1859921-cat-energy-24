@@ -65,7 +65,7 @@
   }
 }
 
-.image-toogle__checked {
+.images-toggle__checked {
   @media (min-width: @tablet-width) {
     margin-left: 226px;
     margin-top: 3px;
@@ -81,11 +81,11 @@
   cursor: pointer;
 }
 
-.image-toogle__button {
+.images-toggle__button {
   display: none;
 }
 
-.image-toogle__button-for {
+.images-toggle__button-for {
   cursor: pointer;
   position: relative;
   right: -29px;
@@ -97,7 +97,7 @@
   }
 }
 
-.image-toogle__button-for::after {
+.images-toggle__button-for::after {
   content: "";
   position: absolute;
   background: @bg-color;
@@ -118,7 +118,7 @@
   }
 }
 
-.image-toogle__button-for::before {
+.images-toggle__button-for::before {
   content: "";
   position: absolute;
   background: @btn-color;
@@ -143,18 +143,18 @@
   }
 }
 
-.image-toogle__button-for:hover::before {
+.images-toggle__button-for:hover::before {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   box-sizing: border-box;
 }
 
-.image-toogle__button-for:active::before {
+.images-toggle__button-for:active::before {
   filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
   border: 1px solid @btn-color;
   box-sizing: border-box;
 }
 
-.image-toogle__button:checked + .image-toogle__button-for::before {
+.images-toggle__button:checked + .images-toggle__button-for::before {
   @media (max-width: @mobile-width-only) {
     right: -24px;
   }

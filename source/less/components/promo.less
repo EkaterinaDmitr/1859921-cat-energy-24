@@ -66,6 +66,8 @@
 
 
 .promo__content {
+  margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     margin-left: 87px;
   }
@@ -121,7 +123,7 @@
   @media (min-width: @tablet-width) {
     color: @text-color-heading;
     margin-right: 210px;
-    margin-bottom: 49px;
+    margin-bottom: 67px;
     margin-left: 2px;
     font-size: 20px;
     line-height: 20px;
@@ -129,15 +131,17 @@
 
   @media (min-width: @desktop-width) {
     text-align: left;
+    margin-bottom: 53px;
   }
 }
 
 .promo__picture {
+  margin-bottom: 2px;
+
   @media (min-width: @tablet-width) {
-    background-image: url("");
     z-index: -1;
     top: 228px;
-    right: 30px;
+    right: 15px;
     position: absolute;
   }
 
@@ -160,21 +164,23 @@
 }
 
 .promo__choose-program {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+
+  text-decoration: none;
   text-transform: uppercase;
   color: @contrasting-color;
   background-color: @btn-color;
-  width: 280px;
   border: none;
-  margin-bottom: 20px;
-  padding: 10px 26px;
+  padding: 10px 73px;
   font-size: 14px;
   font-family: @main-font;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    width: 244px;
     margin-left: -245px;
-    padding: 12px 0 12px;
+    padding: 12px 26px;
     font-size: 20px;
   }
 
@@ -182,6 +188,9 @@
     margin-right: auto;
     margin-left: 0;
     display: block;
+    width: 244px;
+    padding: 17px 26px;
+
   }
 }
 

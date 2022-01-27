@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 10px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -19,13 +19,13 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 46px;
-    margin-top: 17px;
+    margin-top: 21px;
   }
 }
 
 .page-footer__link-logo {
   @media (max-width: @mobile-width-only) {
-    padding: 27px 0 52px;
+    padding: 27px 0 45px;
   }
 
   @media (min-width: @tablet-width) {
@@ -95,7 +95,7 @@
 }
 
 .page-footer__link:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 33px;
 
   @media (min-width: @tablet-width) {
     margin-right: 26px;
@@ -140,6 +140,8 @@
 
 .page-footer__social-container {
   display: flex;
+  align-items: flex-end;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -149,12 +151,12 @@
 
 .page-footer__social-container::before {
   content: "";
-  width: 88%;
+  width: 220%;
   height: 1px;
   position: absolute;
-  background-color: #d9d9d9;
-  margin-top: -25px;
-  right: 20px;
+  background-color: @dirty-white;
+  top: -18px;
+  left: -77px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -163,12 +165,12 @@
 
 .page-footer__social-container::after {
   content: "";
-  width: 88%;
+  width: 220%;
   height: 1px;
   position: absolute;
-  background-color: #d9d9d9;
-  margin-top: 38px;
-  right: 20px;
+  background-color: @dirty-white;
+  top: 45px;
+  left: -77px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -177,6 +179,6 @@
 
 .page-footer__academy-wrapper {
   @media (max-width: @mobile-width-only) {
-    padding: 37px 0 30px;
+    padding: 41px 0 30px;
   }
 }
