@@ -11,6 +11,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="js" href="js/script.js">
     <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -34,10 +35,10 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-header-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-header-mobile.svg" alt="Логотип.">
+          <img class="page-header__logo-image" src="img/logo-header-mobile.svg" alt="Логотип">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -70,7 +71,7 @@
             <source media="(min-width: 768px)" srcset="img/index-can-tablet-1.png 1x, img/index-can-tablet-1@2x.png 2x">
             <img class="promo__picture" src="img/index-can-mobile-1.png" srcset="img/index-can-mobile-1@2x.png 2x" alt="пример товара">
           </picture>
-          <button class="promo__choose-program" type="button">подобрать программу</button>
+          <a class="promo__choose-program" href="form.html">подобрать программу</a>
         </div>
       </section>
       <section class="version-program container">
@@ -113,7 +114,8 @@
           </li>
           <li class="program__item program__item--alarm">
             <p class="program__text-list">Уже через месяц наслаждайтесь изменениями
-              к лучшему <br> вашего питомца!
+              к лучшему&nbsp; <br>
+              вашего питомца!
             </p>
           </li>
         </ul>
@@ -124,7 +126,7 @@
             <h2 class="sample-program__heading">Живой пример</h2>
             <p class="sample-program__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
               Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и <br> по-прежнему спит по 16 часов в день. </p>
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           </div>
           <div class="sample-program__position ">
             <dl class="sample-program__desc">
@@ -146,9 +148,9 @@
             <div class="images-toggle">
               <button class="images-toggle__before" type="button">было</button>
               <span class="visually-hidden">изменить было/стало</span>
-              <div class="image-toogle__checked">
-                <input class="image-toogle__button" id="button" type="checkbox">
-                <label class="image-toogle__button-for" for="button"></label>
+              <div class="images-toggle__checked">
+                <input class="images-toggle__button" id="button" type="checkbox">
+                <label class="images-toggle__button-for" for="button"></label>
               </div>
               <button class="images-toggle__after" type="button">стало</button>
             </div>
@@ -159,11 +161,13 @@
         <div class="contacts__location-wrapper container">
           <div class="contacts__address">
             <h2 class="contacts__heading">приглашаем <br> к сотрудничеству дилеров!</h2>
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <br> <br> Санкт-Петербург</p>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8
+              <br>
+              <br>Санкт-Петербург</p>
           </div>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6087925756676!2d30.32070946609699!3d59.93863343187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sINC0LiAxOS84!5e0!3m2!1sru!2sru!4v1639506884756!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+          <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6087925756676!2d30.32070946609699!3d59.93863343187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sINC0LiAxOS84!5e0!3m2!1sru!2sru!4v1639506884756!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
       </section>
@@ -192,7 +196,7 @@
           </a>
         </div>
         <div class="page-footer__academy-wrapper">
-          <a class="page-footer__link-academy " href="#">
+          <a class="page-footer__link-academy " href="https://htmlacademy.ru/intensive/adaptive">
             <p class="page-footer__text">HTML Academy</p>
             <svg class="page-footer__icon page-footer__icon--academy" width="27" height="34">
               <use xlink:href="#icon-academy"></use>

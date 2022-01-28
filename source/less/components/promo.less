@@ -18,7 +18,7 @@
     top: 0;
     width: 320px;
     height: 302px;
-    background-color: #68B738;
+    background-color: @btn-color;
     background-image: url("../img/promo-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,16 +28,16 @@
       background-size: 320px auto;
     }
 
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       display: none;
     }
 
-    @media (min-width: @desktop-width){
+    @media (min-width: @desktop-width) {
       display: block;
       width: 720px;
       height: 694px;
       text-align: inherit;
-      background-image: url(../img/promo-desktop.jpg);
+      background-image: url("../img/promo-desktop.jpg");
       background-repeat: no-repeat;
       background-position-x: right;
       background-position-y: bottom;
@@ -53,10 +53,11 @@
     }
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     min-height: 837px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     max-width: 1440px;
     min-height: 640px;
     margin: 0 auto;
@@ -65,12 +66,16 @@
 
 
 .promo__content {
+  margin-bottom: 22px;
+
   @media (min-width: @tablet-width) {
     margin-left: 87px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 103px;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -79,9 +84,9 @@
     left: 0;
     width: 100%;
     height: 302px;
-    background-color: #64a73c;
+    background-color: @green;
 
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       display: none;
     }
   }
@@ -102,85 +107,95 @@
     line-height: 60px;
     margin: 27px 0 41px;
   }
+
   @media (min-width: @desktop-width) {
     margin: 87px 0 41px;
   }
 }
 
-.promo__slogan{
+.promo__slogan {
   font-family: @main-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0 0 29px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     color: @text-color-heading;
     margin-right: 210px;
-    margin-bottom: 49px;
+    margin-bottom: 67px;
     margin-left: 2px;
     font-size: 20px;
     line-height: 20px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     text-align: left;
+    margin-bottom: 53px;
   }
 }
 
 .promo__picture {
+  margin-bottom: 2px;
+
   @media (min-width: @tablet-width) {
-    background-image: url("");
     z-index: -1;
     top: 228px;
-    right: 30px;
+    right: 15px;
     position: absolute;
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
+    top: 7px;
     left: 558px;
   }
 }
 
-.promo__picture-big{
+.promo__picture-big {
   display: none;
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     display: block;
     position: absolute;
     right: -10%;
     top: -25%;
     z-index: -5;
   }
-
 }
-.promo__choose-program{
+
+.promo__choose-program {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+
+  text-decoration: none;
   text-transform: uppercase;
   color: @contrasting-color;
   background-color: @btn-color;
-  width: 280px;
   border: none;
-  margin-bottom: 20px;
-  padding: 10px 26px;
+  padding: 10px 73px;
   font-size: 14px;
   font-family: @main-font;
   cursor: pointer;
 
-  @media (min-width: @tablet-width){
-    width: 244px;
+  @media (min-width: @tablet-width) {
     margin-left: -245px;
-    padding: 12px 0 12px;
+    padding: 12px 26px;
     font-size: 20px;
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     margin-right: auto;
     margin-left: 0;
     display: block;
+    width: 244px;
+    padding: 17px 26px;
+
   }
 }
 
 .promo__choose-program:hover {
-  background-color: #5EAA2F;
+  background-color: @btn-hover;
 }
 
 .promo__choose-program:active {

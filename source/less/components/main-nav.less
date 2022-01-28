@@ -1,15 +1,13 @@
-
 .main-nav {
-  position: absolute;
-  right: 13px;
-  top: 20px;
+  margin-left: -20px;
 
   @media (min-width: @tablet-width) {
     position: inherit;
     min-width: 440px;
     margin-left: 94px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     margin-top: 37px;
   }
 }
@@ -19,10 +17,11 @@
   text-transform: uppercase;
   list-style-type: none;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     display: block;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     display: flex;
     justify-content: flex-end;
   }
@@ -37,36 +36,40 @@
   font-size: 20px;
   line-height: 20px;
   cursor: pointer;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
     text-decoration: none;
   }
+
   @media (max-width: @mobile-width-only) {
     &::before {
       content: "";
       position: absolute;
       width: 100%;
       left: 0;
-      border: 1px solid #E6E6E6;
+      border: 1px solid @border--light;
       margin-top: -25px;
     }
   }
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
     font-weight: @base-font-weight;
     color: @text-color-heading;
+  }
 
-    }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 24px;
     font-weight: @base-font-weight;
     color: @white;
-    }
+  }
 }
 
 .main-nav__link--index:hover {
@@ -87,6 +90,7 @@
 .main-nav__link--index.main-nav__link--active {
   @media (min-width: @desktop-width) {
     text-decoration: underline 2px solid @white;
+
     &:active {
       text-decoration: none;
     }
@@ -94,7 +98,7 @@
 }
 
 .main-nav__link--active {
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     text-decoration: underline 2px solid @btn-color;
     text-underline-offset: 8px;
   }
@@ -102,10 +106,12 @@
 
 .main-nav__link--contrast {
   color: @text-color-heading;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.3;
       text-decoration: none;
@@ -114,21 +120,18 @@
 }
 
 .main-nav__item {
-  @media (max-width: @mobile-width-only){
+  @media (max-width: @mobile-width-only) {
     padding: 22px 0 22px;
-
   }
 }
 
 .main-nav__item:not(:last-child) {
-
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     margin-right: 32px;
 
     @media (min-width: @desktop-width) {
       margin-right: 35px;
-
     }
   }
 }
@@ -159,8 +162,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 22px;
+  right: 15px;
   z-index: 2;
   display: block;
   width: 40px;
@@ -179,13 +182,19 @@
 }
 
 .main-nav--opened .main-nav__wrapper {
+  @media (max-width: @mobile-width-only) {
+    background: @white;
+  }
+
   display: block;
   z-index: 5;
-  background: @white;
-  position: absolute;
   top: 43px;
   right: -13px;
   min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    position: inherit;
+  }
 
 }
 
@@ -216,6 +225,9 @@
   }
 }
 
+.main-nav--closed .main-nav__item {
+  display: none;
+}
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
@@ -233,4 +245,8 @@
   box-shadow:
     0 8px 0 0 fade(@text-color-heading, 30%),
     0 16px 0 0 fade(@text-color-heading, 30%);
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
