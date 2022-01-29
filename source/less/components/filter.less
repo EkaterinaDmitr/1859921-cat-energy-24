@@ -139,7 +139,7 @@
   &::after {
     position: absolute;
     left: 14px;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 13px;
     height: 13px;
@@ -168,7 +168,7 @@
 
   &::before {
     position: absolute;
-    top: -7px;
+    top: auto;
     left: -1px;
     width: 30px;
     height: 30px;
@@ -181,7 +181,6 @@
     padding-left: 67px;
 
     &::before {
-      top: -6px;
       left: 7px;
       width: 40px;
       height: 40px;
@@ -190,7 +189,6 @@
 
   @media (min-width: @desktop-width) {
     &::before {
-      top: -5px;
       left: 5px;
     }
   }
@@ -392,14 +390,14 @@
 .filter__other-products-label::before {
   position: relative;
   left: 0;
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   border: 1px solid @border--dark;
   content: "";
   margin-right: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
   }
 }
