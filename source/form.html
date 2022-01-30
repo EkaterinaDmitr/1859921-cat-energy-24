@@ -37,7 +37,7 @@
           <img class="page-header__logo-image" src="img/logo-header-mobile.svg" alt="Логотип.">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -119,7 +119,9 @@
               </ul>
             </fieldset>
             <fieldset class="filter__comment">
-              <legend class="form__legend filter__comment-title" for="comment">Комментарий</legend>
+              <legend class="form__legend filter__comment-title">Комментарий
+                <label class="visually-hidden" for="comment">Расскажите обо всех повaдках кота</label>
+              </legend>
               <textarea class="filter__comment-text" name="comment" rows="7" id="comment" placeholder="Расскажите обо всех повaдках кота"></textarea>
             </fieldset>
             <fieldset class="filter__other-products">
