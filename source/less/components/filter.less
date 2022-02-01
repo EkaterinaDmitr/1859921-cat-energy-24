@@ -35,7 +35,8 @@
 
 .filter__user-data-item {
   display: flex;
-  justify-content: flex-start
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .filter__user-data-item:not(:last-child) {
@@ -415,6 +416,10 @@
   align-items: center;
   margin: 0 0 0 37px;
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    align-items: flex-start;
+  }
 }
 
 .filter__request {
