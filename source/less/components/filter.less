@@ -222,7 +222,6 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  min-width: max-content;
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -237,12 +236,14 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
   }
-
 }
 
 .filter__user-contacts-item {
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-right: -23px;
   }
 }
@@ -276,15 +277,16 @@
 }
 
 .filter__user-contacts-svg {
-  position: relative;
-  left: -32px;
+  position: absolute;
+  right: 32px;
 
   @media (min-width: @tablet-width) {
-    left: -35px;
+    right: 83px;
   }
 
   @media (min-width: @desktop-width) {
-    left: -42px;
+    position: relative;
+    right: 41px;
   }
 }
 
